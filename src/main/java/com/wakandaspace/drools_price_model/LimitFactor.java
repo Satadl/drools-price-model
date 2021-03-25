@@ -63,6 +63,6 @@ public class LimitFactor implements java.io.Serializable {
 		{
 			add(new LimitFactor(800000.0 ,0.7981, 0.9701, 0.78172));
 		}
-	}
+	};
 
 }
