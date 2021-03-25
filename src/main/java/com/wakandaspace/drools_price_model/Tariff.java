@@ -6,12 +6,70 @@ package com.wakandaspace.drools_price_model;
 
 public class Tariff implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Tariff() {
-    }
+	@org.kie.api.definition.type.Label(value = "tier1")
+	private java.lang.Double tier1;
+	@org.kie.api.definition.type.Label(value = "tier2")
+	private java.lang.Double tier2;
+	@org.kie.api.definition.type.Label(value = "tier3")
+	private java.lang.Double tier3;
+	@org.kie.api.definition.type.Label(value = "tier4")
+	private java.lang.Double tier4;
+	@org.kie.api.definition.type.Label(value = "utilisation")
+	private java.lang.Double utilisation;
 
+	public Tariff() {
+	}
 
+	public java.lang.Double getTier1() {
+		return this.tier1;
+	}
 
+	public void setTier1(java.lang.Double tier1) {
+		this.tier1 = tier1;
+	}
+
+	public java.lang.Double getTier2() {
+		return this.tier2;
+	}
+
+	public void setTier2(java.lang.Double tier2) {
+		this.tier2 = tier2;
+	}
+
+	public java.lang.Double getTier3() {
+		return this.tier3;
+	}
+
+	public void setTier3(java.lang.Double tier3) {
+		this.tier3 = tier3;
+	}
+
+	public java.lang.Double getTier4() {
+		return this.tier4;
+	}
+
+	public void setTier4(java.lang.Double tier4) {
+		this.tier4 = tier4;
+	}
+
+	public java.lang.Double getUtilisation() {
+		return this.utilisation;
+	}
+
+	public void setUtilisation(java.lang.Double utilisation) {
+		this.utilisation = utilisation;
+	}
+
+	public Tariff(java.lang.Double tier1, java.lang.Double tier2,
+			java.lang.Double tier3, java.lang.Double tier4,
+			java.lang.Double utilisation) {
+		this.tier1 = tier1;
+		this.tier2 = tier2;
+		this.tier3 = tier3;
+		this.tier4 = tier4;
+		this.utilisation = utilisation;
+	}
 
 }
