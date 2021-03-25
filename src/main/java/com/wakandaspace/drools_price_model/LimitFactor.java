@@ -6,12 +6,57 @@ package com.wakandaspace.drools_price_model;
 
 public class LimitFactor implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public LimitFactor() {
-    }
+	@org.kie.api.definition.type.Label(value = "limit")
+	private double limit;
+	@org.kie.api.definition.type.Label(value = "util")
+	private double util;
+	@org.kie.api.definition.type.Label(value = "cost")
+	private double cost;
+	@org.kie.api.definition.type.Label(value = "all")
+	private double all;
 
+	public LimitFactor() {
+	}
 
+	public double getLimit() {
+		return this.limit;
+	}
 
+	public void setLimit(double limit) {
+		this.limit = limit;
+	}
+
+	public double getUtil() {
+		return this.util;
+	}
+
+	public void setUtil(double util) {
+		this.util = util;
+	}
+
+	public double getCost() {
+		return this.cost;
+	}
+
+	public void setCost(double cost) {
+		this.cost = cost;
+	}
+
+	public double getAll() {
+		return this.all;
+	}
+
+	public void setAll(double all) {
+		this.all = all;
+	}
+
+	public LimitFactor(double limit, double util, double cost, double all) {
+		this.limit = limit;
+		this.util = util;
+		this.cost = cost;
+		this.all = all;
+	}
 
 }
