@@ -8,15 +8,15 @@ public class Tariff implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "tier1")
+	@org.kie.api.definition.type.Label("tier1")
 	private java.lang.Double tier1;
-	@org.kie.api.definition.type.Label(value = "tier2")
+	@org.kie.api.definition.type.Label("tier2")
 	private java.lang.Double tier2;
-	@org.kie.api.definition.type.Label(value = "tier3")
+	@org.kie.api.definition.type.Label("tier3")
 	private java.lang.Double tier3;
-	@org.kie.api.definition.type.Label(value = "tier4")
+	@org.kie.api.definition.type.Label("tier4")
 	private java.lang.Double tier4;
-	@org.kie.api.definition.type.Label(value = "utilisation")
+	@org.kie.api.definition.type.Label("utilisation")
 	private java.lang.Double utilisation;
 
 	public Tariff() {
@@ -61,6 +61,14 @@ public class Tariff implements java.io.Serializable {
 	public void setUtilisation(java.lang.Double utilisation) {
 		this.utilisation = utilisation;
 	}
+
+	public static java.util.List<Tariff> getTariffsList = new java.util.ArrayList<Tariff>() {
+		{
+			add(2000, 1500, 400, 400);
+			add(150000, 100000, 26700, 16700);
+			add(225000, 220000, 205000, 200000);
+		}
+	};
 
 	public Tariff(java.lang.Double tier1, java.lang.Double tier2,
 			java.lang.Double tier3, java.lang.Double tier4,
