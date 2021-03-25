@@ -8,17 +8,17 @@ public class Tariff implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "benefit")
+	@org.kie.api.definition.type.Label("benefit")
 	private java.lang.String benefit;
-	@org.kie.api.definition.type.Label(value = "tier1")
+	@org.kie.api.definition.type.Label("tier1")
 	private double tier1;
-	@org.kie.api.definition.type.Label(value = "tier2")
+	@org.kie.api.definition.type.Label("tier2")
 	private double tier2;
-	@org.kie.api.definition.type.Label(value = "tier3")
+	@org.kie.api.definition.type.Label("tier3")
 	private double tier3;
-	@org.kie.api.definition.type.Label(value = "tier4")
+	@org.kie.api.definition.type.Label("tier4")
 	private double tier4;
-	@org.kie.api.definition.type.Label(value = "utilisation")
+	@org.kie.api.definition.type.Label("utilisation")
 	private double utilisation;
 
 	public Tariff() {
@@ -71,6 +71,16 @@ public class Tariff implements java.io.Serializable {
 	public void setUtilisation(double utilisation) {
 		this.utilisation = utilisation;
 	}
+
+	public static java.util.List<Tariff> getTariffsList = new java.util.ArrayList<Tariff>() {
+		{
+			add("Basic outpatient and in-patient Treatment", 2000.0, 1500.0,
+					400.0, 400.0, 1250.0);
+			add("Obstetrician", 150000.0, 100000.0, 26700.0, 16700.0, 25.0);
+			add("Dialysis and all related care", 225000.0, 220000.0, 205000.0,
+					200000.0, 1.5);
+		}
+	};
 
 	public Tariff(java.lang.String benefit, double tier1, double tier2,
 			double tier3, double tier4, double utilisation) {
