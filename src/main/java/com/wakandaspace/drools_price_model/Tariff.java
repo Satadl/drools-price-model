@@ -74,11 +74,12 @@ public class Tariff implements java.io.Serializable {
 
 	public static java.util.List<Tariff> getTariffsList = new java.util.ArrayList<Tariff>() {
 		{
-			add("Basic outpatient and in-patient Treatment", 2000.0, 1500.0,
-					400.0, 400.0, 1250.0);
-			add("Obstetrician", 150000.0, 100000.0, 26700.0, 16700.0, 25.0);
-			add("Dialysis and all related care", 225000.0, 220000.0, 205000.0,
-					200000.0, 1.5);
+			add(new Tariff("Basic outpatient and in-patient Treatment", 2000.0,
+					1500.0, 400.0, 400.0, 1250.0));
+			add(new Tariff("Obstetrician", 150000.0, 100000.0, 26700.0,
+					16700.0, 25.0));
+			add(new Tariff("Dialysis and all related care", 225000.0, 220000.0,
+					205000.0, 200000.0, 1.5));
 		}
 	};
 
