@@ -8,13 +8,13 @@ public class LimitFactor implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "limit")
+	@org.kie.api.definition.type.Label("limit")
 	private double limit;
-	@org.kie.api.definition.type.Label(value = "util")
+	@org.kie.api.definition.type.Label("util")
 	private double util;
-	@org.kie.api.definition.type.Label(value = "cost")
+	@org.kie.api.definition.type.Label("cost")
 	private double cost;
-	@org.kie.api.definition.type.Label(value = "all")
+	@org.kie.api.definition.type.Label("all")
 	private double all;
 
 	public LimitFactor() {
