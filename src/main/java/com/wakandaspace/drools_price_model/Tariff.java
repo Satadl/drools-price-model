@@ -67,9 +67,11 @@ public class Tariff implements java.io.Serializable {
 
 	public static java.util.List<Tariff> getTariffsList = new java.util.ArrayList<Tariff>() {
 		{
-			add(2000, 1500, 400, 400);
-			add(150000, 100000, 26700, 16700);
-			add(225000, 220000, 205000, 200000);
+			add("Basic outpatient and in-patient Treatment", 2000, 1500, 400,
+					400, 1250);
+			add("Obstetrician", 150000, 100000, 26700, 16700, 25);
+			add("Dialysis and all related care", 225000, 220000, 205000,
+					200000, 1.5);
 		}
 	};
 
@@ -78,6 +80,17 @@ public class Tariff implements java.io.Serializable {
 	}
 
 	public void setBenefit(java.lang.String benefit) {
+		this.benefit = benefit;
+	}
+
+	public Tariff(java.lang.String benefit, java.lang.Double tier1,
+			java.lang.Double tier2, java.lang.Double tier3,
+			java.lang.Double tier4, java.lang.Double utilisation) {
+		this.tier1 = tier1;
+		this.tier2 = tier2;
+		this.tier3 = tier3;
+		this.tier4 = tier4;
+		this.utilisation = utilisation;
 		this.benefit = benefit;
 	}
 
