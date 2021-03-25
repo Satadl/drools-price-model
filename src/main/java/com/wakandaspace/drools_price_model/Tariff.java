@@ -116,4 +116,12 @@ public class Tariff implements java.io.Serializable {
 		this.benefit = benefit;
 	}
 
+	/*
+	 * public Tariff(java.lang.Double tier1, java.lang.Double tier2,
+	 * java.lang.Double tier3, java.lang.Double tier4, java.lang.Double
+	 * utilisation, java.lang.String benefit) { this.tier1 = tier1; this.tier2 =
+	 * tier2; this.tier3 = tier3; this.tier4 = tier4; this.utilisation =
+	 * utilisation; this.benefit = benefit; }
+	 */
+
 }
