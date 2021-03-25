@@ -58,5 +58,11 @@ public class LimitFactor implements java.io.Serializable {
 		this.cost = cost;
 		this.all = all;
 	}
+	
+	public static java.util.List<LimitFactor> getLimitFactorsList = new java.util.ArrayList<LimitFactor>() {
+		{
+			add(new LimitFactor(800000.0 ,0.7981, 0.9701, 0.78172));
+		}
+	}
 
 }
