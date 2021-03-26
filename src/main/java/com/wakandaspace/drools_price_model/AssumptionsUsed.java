@@ -8,11 +8,11 @@ public class AssumptionsUsed implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "item")
+	@org.kie.api.definition.type.Label("item")
 	private java.lang.String item;
-	@org.kie.api.definition.type.Label(value = "coverage")
+	@org.kie.api.definition.type.Label("coverage")
 	private java.lang.String coverage;
-	@org.kie.api.definition.type.Label(value = "factor")
+	@org.kie.api.definition.type.Label("factor")
 	private double factor;
 
 	public AssumptionsUsed() {
