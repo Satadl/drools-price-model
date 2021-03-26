@@ -8,12 +8,15 @@ public class plan implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "name")
+	@org.kie.api.definition.type.Label("name")
 	private java.lang.String name;
-	@org.kie.api.definition.type.Label(value = "hospitalTier")
+	@org.kie.api.definition.type.Label("hospitalTier")
 	private java.lang.String hospitalTier;
-	@org.kie.api.definition.type.Label(value = "benefitLimits")
+	@org.kie.api.definition.type.Label("benefitLimits")
 	private double benefitLimits;
+
+	@org.kie.api.definition.type.Label(value = "preAuthorizationRequired")
+	private boolean preAuthorizationRequired;
 
 	public plan() {
 	}
@@ -42,11 +45,20 @@ public class plan implements java.io.Serializable {
 		this.benefitLimits = benefitLimits;
 	}
 
+	public boolean isPreAuthorizationRequired() {
+		return this.preAuthorizationRequired;
+	}
+
+	public void setPreAuthorizationRequired(boolean preAuthorizationRequired) {
+		this.preAuthorizationRequired = preAuthorizationRequired;
+	}
+
 	public plan(java.lang.String name, java.lang.String hospitalTier,
-			double benefitLimits) {
+			double benefitLimits, boolean preAuthorizationRequired) {
 		this.name = name;
 		this.hospitalTier = hospitalTier;
 		this.benefitLimits = benefitLimits;
+		this.preAuthorizationRequired = preAuthorizationRequired;
 	}
 
 }
