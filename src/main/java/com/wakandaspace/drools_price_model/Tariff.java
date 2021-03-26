@@ -81,7 +81,7 @@ public class Tariff implements java.io.Serializable {
 			add(new Tariff("Dialysis and all related care", 225000.0, 220000.0,
 					205000.0, 200000.0, 1.5));
 		}
-	};
+	}
 
 	public Tariff(java.lang.String benefit, double tier1, double tier2,
 			double tier3, double tier4, double utilisation) {
