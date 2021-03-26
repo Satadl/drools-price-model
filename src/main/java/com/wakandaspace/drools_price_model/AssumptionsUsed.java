@@ -6,12 +6,47 @@ package com.wakandaspace.drools_price_model;
 
 public class AssumptionsUsed implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public AssumptionsUsed() {
-    }
+	@org.kie.api.definition.type.Label(value = "item")
+	private java.lang.String item;
+	@org.kie.api.definition.type.Label(value = "coverage")
+	private java.lang.String coverage;
+	@org.kie.api.definition.type.Label(value = "factor")
+	private double factor;
 
+	public AssumptionsUsed() {
+	}
 
+	public java.lang.String getItem() {
+		return this.item;
+	}
 
+	public void setItem(java.lang.String item) {
+		this.item = item;
+	}
+
+	public java.lang.String getCoverage() {
+		return this.coverage;
+	}
+
+	public void setCoverage(java.lang.String coverage) {
+		this.coverage = coverage;
+	}
+
+	public double getFactor() {
+		return this.factor;
+	}
+
+	public void setFactor(double factor) {
+		this.factor = factor;
+	}
+
+	public AssumptionsUsed(java.lang.String item, java.lang.String coverage,
+			double factor) {
+		this.item = item;
+		this.coverage = coverage;
+		this.factor = factor;
+	}
 
 }
