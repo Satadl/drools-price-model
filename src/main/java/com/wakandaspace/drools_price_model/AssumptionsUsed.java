@@ -53,6 +53,6 @@ public class AssumptionsUsed implements java.io.Serializable {
 		{
 			add(new AssumptionsUsed("Renal", "1 Session", 0,79));
 		}
-	}
+	};
 
 }
