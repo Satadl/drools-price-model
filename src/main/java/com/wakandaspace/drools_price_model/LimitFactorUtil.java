@@ -6,12 +6,14 @@ package com.wakandaspace.drools_price_model;
 
 public class LimitFactorUtil implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public LimitFactorUtil() {
-    }
+	public LimitFactorUtil() {
+	}
 
-
-
-
+	public static java.util.List<com.wakandaspace.drools_price_model.LimitFactor> getLimitFactorsList = new java.util.ArrayList<com.wakandaspace.drools_price_model.LimitFactor>() {
+		{
+			add(new LimitFactor(800000.0, 0.7981, 0.9701, 0.78172));
+		}
+	};
 }
