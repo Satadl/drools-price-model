@@ -48,11 +48,5 @@ public class AssumptionsUsed implements java.io.Serializable {
 		this.coverage = coverage;
 		this.factor = factor;
 	}
-	
-	public static java.util.List<AssumptionsUsed> getAssumptionsUsedList = new java.util.ArrayList<AssumptionsUsed>() {
-		{
-			add(new AssumptionsUsed("Renal", "1 Session", 0,79));
-		}
-	};
 
 }
