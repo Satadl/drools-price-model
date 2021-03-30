@@ -13,7 +13,7 @@ public class AssumptionsUsedUtil implements java.io.Serializable {
 
 	public static java.util.List<com.wakandaspace.drools_price_model.AssumptionsUsed> getAssumptionsUsedList = new java.util.ArrayList<com.wakandaspace.drools_price_model.AssumptionsUsed>() {
 		{
-			add(new AssumptionsUsed("Renal", "1 Session", 0, 79));
+			add(new AssumptionsUsed("Renal", "1 Session", 0.79));
 		}
 	};
 }
