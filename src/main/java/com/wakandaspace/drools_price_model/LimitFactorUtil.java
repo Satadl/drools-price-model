@@ -17,7 +17,7 @@ public class LimitFactorUtil implements java.io.Serializable {
 		}
 	};
 	/**
-	 * Fonction qui prend en entrée une limite Retourne un objet LimitFactors
+	 * Fonction qui prend en entrée une limite et retourne un objet LimitFactors
 	 */
 	public static com.wakandaspace.drools_price_model.LimitFactor getFactorsPerLimit(
 			double limit) {
