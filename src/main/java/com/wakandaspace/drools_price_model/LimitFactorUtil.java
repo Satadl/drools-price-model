@@ -21,7 +21,7 @@ public class LimitFactorUtil implements java.io.Serializable {
 	 */
 	public static com.wakandaspace.drools_price_model.LimitFactor getFactorsPerLimit(
 			double limit) {
-		com.wakandaspace.drools_price_model.LimitFactor limitfactor;
+		com.wakandaspace.drools_price_model.LimitFactor limitfactor = new com.wakandaspace.drools_price_model.LimitFactor();
 		for (LimitFactor limitFactor : getLimitFactorsList) {
 			if (limitFactor.getLimit() == limit) {
 				limitfactor = limitFactor;
