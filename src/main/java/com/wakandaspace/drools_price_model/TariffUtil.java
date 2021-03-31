@@ -21,5 +21,18 @@ public class TariffUtil implements java.io.Serializable {
 					205000.0, 200000.0, 1.5));
 		}
 	};
+	/**
+	 * La fonction permet de retourner un objet Tariff selon un benefit donné
+	 */
+	public static com.wakandaspace.drools_price_model.Tariff getFactorsPerBenefit(
+			String benefit) {
+		Tariff tarif = new Tariff();
+		for (Tariff tariff : getTariffsList) {
+			if (tariff.getBenefit().compareToIgnoreCase(benefit) == 0) {
+				tarif = tariff;
+			}
+		}
+		return tarif;
+	}
 
 }
