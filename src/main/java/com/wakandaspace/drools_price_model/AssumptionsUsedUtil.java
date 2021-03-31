@@ -16,4 +16,15 @@ public class AssumptionsUsedUtil implements java.io.Serializable {
 			add(new AssumptionsUsed("Renal", "1 Session", 0.79));
 		}
 	};
+
+	public static double search(String item, String coverage) {
+		for (AssumptionsUsed assumptionsUsed : getAssumptionsUsedList) {
+			if (assumptionsUsed.getItem().compareToIgnoreCase(item) == 0
+					&& assumptionsUsed.getCoverage().compareToIgnoreCase(
+							coverage) == 0) {
+				return assumptionsUsed.getFactor();
+			}
+		}
+		return 1;
+	}
 }
