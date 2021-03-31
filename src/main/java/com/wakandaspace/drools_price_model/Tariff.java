@@ -72,20 +72,6 @@ public class Tariff implements java.io.Serializable {
 		this.utilisation = utilisation;
 	}
 
-	/**
-	 * La fonction permet de retourner un objet Tariff selon un benefit donné
-	 */
-	public static com.wakandaspace.drools_price_model.Tariff getFactorsPerBenefit(
-			String benefit) {
-		Tariff tarif = new Tariff();
-		for (Tariff tariff : getTariffsList) {
-			if (tariff.getBenefit().compareToIgnoreCase(benefit) == 0) {
-				tarif = tariff;
-			}
-		}
-		return tarif;
-	}
-
 	public Tariff(java.lang.String benefit, double tier1, double tier2,
 			double tier3, double tier4, double utilisation) {
 		this.benefit = benefit;
