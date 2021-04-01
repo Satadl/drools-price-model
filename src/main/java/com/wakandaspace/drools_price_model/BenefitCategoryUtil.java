@@ -6,12 +6,9 @@ package com.wakandaspace.drools_price_model;
 
 public class BenefitCategoryUtil implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public BenefitCategoryUtil() {
-    }
-
-
-
+	public BenefitCategoryUtil() {
+	}
 
 }
