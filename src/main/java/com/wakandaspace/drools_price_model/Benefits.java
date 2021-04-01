@@ -8,15 +8,15 @@ public class Benefits implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "benefitType")
+	@org.kie.api.definition.type.Label("benefitType")
 	private java.lang.String benefitType;
-	@org.kie.api.definition.type.Label(value = "covered")
+	@org.kie.api.definition.type.Label("covered")
 	private java.lang.Boolean covered;
-	@org.kie.api.definition.type.Label(value = "wardType")
+	@org.kie.api.definition.type.Label("wardType")
 	private java.lang.String wardType;
-	@org.kie.api.definition.type.Label(value = "numberOfSessions")
+	@org.kie.api.definition.type.Label("numberOfSessions")
 	private int numberOfSessions;
-	@org.kie.api.definition.type.Label(value = "itemCover")
+	@org.kie.api.definition.type.Label("itemCoverage")
 	private java.lang.String itemCover;
 
 	public Benefits() {
