@@ -15,7 +15,6 @@ public class LimitFactorUtil implements java.io.Serializable {
 		{
 			add(new LimitFactor(800000.0, 0.7981, 0.9701, 0.78172));
 			add(new LimitFactor(10000000.0, 1.0000, 0.9980, 0.99924));
-
 		}
 	};
 	/**
