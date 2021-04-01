@@ -14,7 +14,8 @@ public class LimitFactorUtil implements java.io.Serializable {
 	public static java.util.List<com.wakandaspace.drools_price_model.LimitFactor> getLimitFactorsList = new java.util.ArrayList<com.wakandaspace.drools_price_model.LimitFactor>() {
 		{
 			add(new LimitFactor(800000.0, 0.7981, 0.9701, 0.78172));
-			add(new LimitFactor(10000000.0, 1, 1, 1.0000));
+			add(new LimitFactor(10000000.0, 1.0000, 0.9980, 0.99924));
+			add(new LimitFactor(20000000.0, 1, 1, 1.0000));
 		}
 	};
 	/**
