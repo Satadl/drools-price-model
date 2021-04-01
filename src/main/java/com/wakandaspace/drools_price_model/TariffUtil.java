@@ -22,7 +22,8 @@ public class TariffUtil implements java.io.Serializable {
 		}
 	};
 	/**
-	 * La fonction permet de retourner un objet Tariff selon un benefit donné
+	 * The function allows you to return a Tariff object according to a given
+	 * benefit
 	 */
 	public static com.wakandaspace.drools_price_model.Tariff getFactorsPerBenefit(
 			String benefit) {
