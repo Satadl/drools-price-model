@@ -6,12 +6,20 @@ package com.wakandaspace.drools_price_model;
 
 public class BenefitUtil implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public BenefitUtil() {
-    }
+	public BenefitUtil() {
+	}
 
+	public static java.util.List<com.wakandaspace.drools_price_model.Benefit> getBenefitsList = new java.util.ArrayList<com.wakandaspace.drools_price_model.Benefit>() {
+		{
+			add(new Benefit("Basic outpatient and in-patient Treatment", true,
+					"", "", 0));
+			add(new Benefit("Ostetrician", true, "unlimited", "", 0));
+			add(new Benefit("Dialysis and all related care", true, "1 session",
+					"", 0));
 
-
+		}
+	};
 
 }
