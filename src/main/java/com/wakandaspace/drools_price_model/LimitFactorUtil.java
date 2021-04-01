@@ -15,7 +15,7 @@ public class LimitFactorUtil implements java.io.Serializable {
 		{
 			add(new LimitFactor(800000.0, 0.7981, 0.9701, 0.78172));
 			add(new LimitFactor(10000000.0, 1.0000, 0.9980, 0.99924));
-			add(new LimitFactor(10000001.0, 1, 1, 1.0000));
+
 		}
 	};
 	/**
@@ -24,23 +24,13 @@ public class LimitFactorUtil implements java.io.Serializable {
 	public static com.wakandaspace.drools_price_model.LimitFactor getFactorsPerLimit(
 			double limit) {
 		com.wakandaspace.drools_price_model.LimitFactor limitfactor = new com.wakandaspace.drools_price_model.LimitFactor();
+		if (limit > 10000000) {
+			return new LimitFactor(limit, 1, 1, 1.0000);
+		}
 		for (LimitFactor limitFactor : getLimitFactorsList) {
 			if (limitFactor.getLimit() == limit) {
 				limitfactor = limitFactor;
-			}
-			/*
-			 * All the limits that are greater than 10.000000 have the same
-			 * factors as the limit =10.000001 If there is a limit that is equal
-			 * to 10000001 ,we set the limit of the object to the given limit
-			 * before returning the object
-			 */
-			else {
-				if (limit > 10000000) {
-					if (limitFactor.getLimit() == 10000001) {
-						limitFactor.setLimit(limit);
-						limitfactor = limitFactor;
-					}
-				}
+				break;
 			}
 		}
 		return limitfactor;
