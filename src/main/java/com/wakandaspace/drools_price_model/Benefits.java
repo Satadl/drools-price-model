@@ -6,12 +6,70 @@ package com.wakandaspace.drools_price_model;
 
 public class Benefits implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Benefits() {
-    }
+	@org.kie.api.definition.type.Label(value = "benefitType")
+	private java.lang.String benefitType;
+	@org.kie.api.definition.type.Label(value = "covered")
+	private java.lang.Boolean covered;
+	@org.kie.api.definition.type.Label(value = "wardType")
+	private java.lang.String wardType;
+	@org.kie.api.definition.type.Label(value = "numberOfSessions")
+	private int numberOfSessions;
+	@org.kie.api.definition.type.Label(value = "itemCover")
+	private java.lang.String itemCover;
 
+	public Benefits() {
+	}
 
+	public java.lang.String getBenefitType() {
+		return this.benefitType;
+	}
 
+	public void setBenefitType(java.lang.String benefitType) {
+		this.benefitType = benefitType;
+	}
+
+	public java.lang.Boolean getCovered() {
+		return this.covered;
+	}
+
+	public void setCovered(java.lang.Boolean covered) {
+		this.covered = covered;
+	}
+
+	public java.lang.String getWardType() {
+		return this.wardType;
+	}
+
+	public void setWardType(java.lang.String wardType) {
+		this.wardType = wardType;
+	}
+
+	public int getNumberOfSessions() {
+		return this.numberOfSessions;
+	}
+
+	public void setNumberOfSessions(int numberOfSessions) {
+		this.numberOfSessions = numberOfSessions;
+	}
+
+	public java.lang.String getItemCover() {
+		return this.itemCover;
+	}
+
+	public void setItemCover(java.lang.String itemCover) {
+		this.itemCover = itemCover;
+	}
+
+	public Benefits(java.lang.String benefitType, java.lang.Boolean covered,
+			java.lang.String wardType, int numberOfSessions,
+			java.lang.String itemCover) {
+		this.benefitType = benefitType;
+		this.covered = covered;
+		this.wardType = wardType;
+		this.numberOfSessions = numberOfSessions;
+		this.itemCover = itemCover;
+	}
 
 }
