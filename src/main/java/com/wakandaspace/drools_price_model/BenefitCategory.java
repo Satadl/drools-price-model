@@ -6,12 +6,50 @@ package com.wakandaspace.drools_price_model;
 
 public class BenefitCategory implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public BenefitCategory() {
-    }
+	@org.kie.api.definition.type.Label(value = "benefitsList")
+	private java.util.List<com.wakandaspace.drools_price_model.Benefit> benefitsList;
+	@org.kie.api.definition.type.Label(value = "coverageFrom")
+	private java.lang.String coverageFrom;
+	@org.kie.api.definition.type.Description(value = "unlimited=1\nnone=0")
+	@org.kie.api.definition.type.Label(value = "limit")
+	private java.lang.Double limit;
 
+	public BenefitCategory() {
+	}
 
+	public java.util.List<com.wakandaspace.drools_price_model.Benefit> getBenefitsList() {
+		return this.benefitsList;
+	}
 
+	public void setBenefitsList(
+			java.util.List<com.wakandaspace.drools_price_model.Benefit> benefitsList) {
+		this.benefitsList = benefitsList;
+	}
+
+	public java.lang.String getCoverageFrom() {
+		return this.coverageFrom;
+	}
+
+	public void setCoverageFrom(java.lang.String coverageFrom) {
+		this.coverageFrom = coverageFrom;
+	}
+
+	public java.lang.Double getLimit() {
+		return this.limit;
+	}
+
+	public void setLimit(java.lang.Double limit) {
+		this.limit = limit;
+	}
+
+	public BenefitCategory(
+			java.util.List<com.wakandaspace.drools_price_model.Benefit> benefitsList,
+			java.lang.String coverageFrom, java.lang.Double limit) {
+		this.benefitsList = benefitsList;
+		this.coverageFrom = coverageFrom;
+		this.limit = limit;
+	}
 
 }
