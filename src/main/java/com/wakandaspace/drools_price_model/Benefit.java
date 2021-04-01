@@ -12,8 +12,6 @@ public class Benefit implements java.io.Serializable {
 	private java.lang.String benefitType;
 	@org.kie.api.definition.type.Label("covered")
 	private java.lang.Boolean covered;
-	@org.kie.api.definition.type.Label("wardType")
-	private java.lang.String wardType;
 	@org.kie.api.definition.type.Label("numberOfSessions")
 	private int numberOfSessions;
 	@org.kie.api.definition.type.Label("itemCoverage")
@@ -38,14 +36,6 @@ public class Benefit implements java.io.Serializable {
 		this.covered = covered;
 	}
 
-	public java.lang.String getWardType() {
-		return this.wardType;
-	}
-
-	public void setWardType(java.lang.String wardType) {
-		this.wardType = wardType;
-	}
-
 	public int getNumberOfSessions() {
 		return this.numberOfSessions;
 	}
@@ -63,11 +53,9 @@ public class Benefit implements java.io.Serializable {
 	}
 
 	public Benefit(java.lang.String benefitType, java.lang.Boolean covered,
-			java.lang.String wardType, int numberOfSessions,
-			java.lang.String itemCover) {
+			int numberOfSessions, java.lang.String itemCover) {
 		this.benefitType = benefitType;
 		this.covered = covered;
-		this.wardType = wardType;
 		this.numberOfSessions = numberOfSessions;
 		this.itemCover = itemCover;
 	}
