@@ -14,9 +14,6 @@ public class Benefit implements java.io.Serializable {
 	private java.lang.Boolean covered;
 	@org.kie.api.definition.type.Label("numberOfSessions")
 	private int numberOfSessions;
-	@org.kie.api.definition.type.Label("itemCoverage")
-	private java.lang.String itemCover;
-
 	public Benefit() {
 	}
 
@@ -44,20 +41,11 @@ public class Benefit implements java.io.Serializable {
 		this.numberOfSessions = numberOfSessions;
 	}
 
-	public java.lang.String getItemCover() {
-		return this.itemCover;
-	}
-
-	public void setItemCover(java.lang.String itemCover) {
-		this.itemCover = itemCover;
-	}
-
 	public Benefit(java.lang.String benefitType, java.lang.Boolean covered,
-			int numberOfSessions, java.lang.String itemCover) {
+			int numberOfSessions) {
 		this.benefitType = benefitType;
 		this.covered = covered;
 		this.numberOfSessions = numberOfSessions;
-		this.itemCover = itemCover;
 	}
 
 }
