@@ -28,12 +28,11 @@ public class LimitFactorUtil implements java.io.Serializable {
 			if (limitFactor.getLimit() == limit) {
 				limitfactor = limitFactor;
 			}
-			/**
+			/*
 			 * All the limits that are greater than 10.000000 have the same
-			 * factors as the limit =10.000001 we verifie if the given limit is
-			 * greater than 10000000 If this is a case we look if there is a
-			 * limit that is equal to 10000001 and we set the limit of the
-			 * object to the given limit and we return the object
+			 * factors as the limit =10.000001 If there is a limit that is equal
+			 * to 10000001 ,we set the limit of the object to the given limit
+			 * before returning the object
 			 */
 			else {
 				if (limit > 10000000) {
