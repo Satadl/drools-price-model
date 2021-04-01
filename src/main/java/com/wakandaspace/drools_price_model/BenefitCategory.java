@@ -14,8 +14,8 @@ public class BenefitCategory implements java.io.Serializable {
 	@org.kie.api.definition.type.Description("unlimited->1\nnone->0")
 	private java.lang.Double limit;
 
-	@org.kie.api.definition.type.Label(value = "listeBenefits")
-	private java.util.List<com.wakandaspace.drools_price_model.Benefit> listeBenefits;
+	@org.kie.api.definition.type.Label(value = "benefitsList")
+	private java.util.List<com.wakandaspace.drools_price_model.Benefit> benefitsList;
 
 	public BenefitCategory() {
 	}
@@ -36,15 +36,6 @@ public class BenefitCategory implements java.io.Serializable {
 		this.limit = limit;
 	}
 
-	public java.util.List<com.wakandaspace.drools_price_model.Benefit> getListeBenefits() {
-		return this.listeBenefits;
-	}
-
-	public void setListeBenefits(
-			java.util.List<com.wakandaspace.drools_price_model.Benefit> listeBenefits) {
-		this.listeBenefits = listeBenefits;
-	}
-
 	public BenefitCategory(
 			java.lang.String coverageFrom,
 			java.lang.Double limit,
@@ -52,6 +43,24 @@ public class BenefitCategory implements java.io.Serializable {
 		this.coverageFrom = coverageFrom;
 		this.limit = limit;
 		this.listeBenefits = listeBenefits;
+	}
+
+	public java.util.List<com.wakandaspace.drools_price_model.Benefit> getBenefitsList() {
+		return this.benefitsList;
+	}
+
+	public void setBenefitsList(
+			java.util.List<com.wakandaspace.drools_price_model.Benefit> benefitsList) {
+		this.benefitsList = benefitsList;
+	}
+
+	public BenefitCategory(
+			java.lang.String coverageFrom,
+			java.lang.Double limit,
+			java.util.List<com.wakandaspace.drools_price_model.Benefit> benefitsList) {
+		this.coverageFrom = coverageFrom;
+		this.limit = limit;
+		this.benefitsList = benefitsList;
 	}
 
 }
