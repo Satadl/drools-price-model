@@ -15,8 +15,11 @@ public class plan implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("benefitLimits")
 	private double benefitLimits;
 
-	@org.kie.api.definition.type.Label(value = "preAuthorizationRequired")
+	@org.kie.api.definition.type.Label("preAuthorizationRequired")
 	private boolean preAuthorizationRequired;
+
+	@org.kie.api.definition.type.Label(value = "benefitCategories")
+	private java.util.List<com.wakandaspace.drools_price_model.BenefitCategory> benefitCategories;
 
 	public plan() {
 	}
@@ -53,12 +56,26 @@ public class plan implements java.io.Serializable {
 		this.preAuthorizationRequired = preAuthorizationRequired;
 	}
 
-	public plan(java.lang.String name, java.lang.String hospitalTier,
-			double benefitLimits, boolean preAuthorizationRequired) {
+	public java.util.List<com.wakandaspace.drools_price_model.BenefitCategory> getBenefitCategories() {
+		return this.benefitCategories;
+	}
+
+	public void setBenefitCategories(
+			java.util.List<com.wakandaspace.drools_price_model.BenefitCategory> benefitCategories) {
+		this.benefitCategories = benefitCategories;
+	}
+
+	public plan(
+			java.lang.String name,
+			java.lang.String hospitalTier,
+			double benefitLimits,
+			boolean preAuthorizationRequired,
+			java.util.List<com.wakandaspace.drools_price_model.BenefitCategory> benefitCategories) {
 		this.name = name;
 		this.hospitalTier = hospitalTier;
 		this.benefitLimits = benefitLimits;
 		this.preAuthorizationRequired = preAuthorizationRequired;
+		this.benefitCategories = benefitCategories;
 	}
 
 }
