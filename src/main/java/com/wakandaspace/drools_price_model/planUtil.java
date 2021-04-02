@@ -10,7 +10,7 @@ public class planUtil implements java.io.Serializable {
 
 	public planUtil() {
 	}
-	public static java.util.List<com.wakandaspace.drools_price_model.plan> getRedBerylPlan = new java.util.ArrayList<com.wakandaspace.drools_price_model.plan>() {
+	public static java.util.List<com.wakandaspace.drools_price_model.plan> getPlanList = new java.util.ArrayList<com.wakandaspace.drools_price_model.plan>() {
 		{
 			add(new plan("Red Berryl Lite", "Tiers 4", 800000, true,
 					BenefitCategoryUtil.getBenefitCategories));
