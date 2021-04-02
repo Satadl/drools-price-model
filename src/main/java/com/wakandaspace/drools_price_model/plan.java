@@ -56,19 +56,6 @@ public class plan implements java.io.Serializable {
 		this.preAuthorizationRequired = preAuthorizationRequired;
 	}
 
-	public plan(
-			java.lang.String name,
-			java.lang.String hospitalTier,
-			double benefitLimits,
-			boolean preAuthorizationRequired,
-			java.util.List<com.wakandaspace.drools_price_model.BenefitUtil> benefitsList) {
-		this.name = name;
-		this.hospitalTier = hospitalTier;
-		this.benefitLimits = benefitLimits;
-		this.preAuthorizationRequired = preAuthorizationRequired;
-		this.benefitsList = benefitsList;
-	}
-
 	public com.wakandaspace.drools_price_model.BenefitCategoryUtil getBenefitCategories() {
 		return this.benefitCategories;
 	}
