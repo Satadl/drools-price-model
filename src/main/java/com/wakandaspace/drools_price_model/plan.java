@@ -12,14 +12,11 @@ public class plan implements java.io.Serializable {
 	private java.lang.String name;
 	@org.kie.api.definition.type.Label("hospitalTier")
 	private java.lang.String hospitalTier;
-	@org.kie.api.definition.type.Label("benefitLimits")
-	private double benefitLimits;
-
 	@org.kie.api.definition.type.Label("preAuthorizationRequired")
 	private boolean preAuthorizationRequired;
 
-	@org.kie.api.definition.type.Label(value = "benefitCategories")
-	private java.util.List<com.wakandaspace.drools_price_model.BenefitCategory> benefitCategories;
+	@org.kie.api.definition.type.Label(value = "benefitLimitPerEnrolle")
+	private double benefitLimitPerEnrolle;
 
 	public plan() {
 	}
@@ -40,29 +37,12 @@ public class plan implements java.io.Serializable {
 		this.hospitalTier = hospitalTier;
 	}
 
-	public double getBenefitLimits() {
-		return this.benefitLimits;
-	}
-
-	public void setBenefitLimits(double benefitLimits) {
-		this.benefitLimits = benefitLimits;
-	}
-
 	public boolean isPreAuthorizationRequired() {
 		return this.preAuthorizationRequired;
 	}
 
 	public void setPreAuthorizationRequired(boolean preAuthorizationRequired) {
 		this.preAuthorizationRequired = preAuthorizationRequired;
-	}
-
-	public java.util.List<com.wakandaspace.drools_price_model.BenefitCategory> getBenefitCategories() {
-		return this.benefitCategories;
-	}
-
-	public void setBenefitCategories(
-			java.util.List<com.wakandaspace.drools_price_model.BenefitCategory> benefitCategories) {
-		this.benefitCategories = benefitCategories;
 	}
 
 	public plan(
@@ -76,6 +56,22 @@ public class plan implements java.io.Serializable {
 		this.benefitLimits = benefitLimits;
 		this.preAuthorizationRequired = preAuthorizationRequired;
 		this.benefitCategories = benefitCategories;
+	}
+
+	public double getBenefitLimitPerEnrolle() {
+		return this.benefitLimitPerEnrolle;
+	}
+
+	public void setBenefitLimitPerEnrolle(double benefitLimitPerEnrolle) {
+		this.benefitLimitPerEnrolle = benefitLimitPerEnrolle;
+	}
+
+	public plan(java.lang.String name, java.lang.String hospitalTier,
+			boolean preAuthorizationRequired, double benefitLimitPerEnrolle) {
+		this.name = name;
+		this.hospitalTier = hospitalTier;
+		this.preAuthorizationRequired = preAuthorizationRequired;
+		this.benefitLimitPerEnrolle = benefitLimitPerEnrolle;
 	}
 
 }
