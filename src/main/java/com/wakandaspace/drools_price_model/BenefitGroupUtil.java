@@ -13,10 +13,11 @@ public class BenefitGroupUtil implements java.io.Serializable {
 	public static java.util.List<com.wakandaspace.drools_price_model.BenefitGroup> getBenefitGroups = new java.util.ArrayList<com.wakandaspace.drools_price_model.BenefitGroup>() {
 		{
 			add(new BenefitGroup("GENERAL CONSULTATION", "1ST QUARTER",
-					100000.0, 0, 0));
+					100000.0, 0.0, 0.0));
 			add(new BenefitGroup("SPECIALIST CONSULTATION", "1ST QUARTER",
-					100000.0, 0, 0));
-			add(new BenefitGroup("RENAL CARE", "1ST QUARTER", 100000.0, 0, 0));
+					100000.0, -1.0, 0.0));
+			add(new BenefitGroup("RENAL CARE", "1ST QUARTER", 100000.0, 0.0,
+					0.0));
 
 		}
 	};
