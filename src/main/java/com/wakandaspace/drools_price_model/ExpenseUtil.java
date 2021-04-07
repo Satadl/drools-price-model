@@ -15,4 +15,5 @@ public class ExpenseUtil implements java.io.Serializable {
 		{
 			add(new Expense(0.7, "Red Berryl Lite"));
 		}
+    };
 }
