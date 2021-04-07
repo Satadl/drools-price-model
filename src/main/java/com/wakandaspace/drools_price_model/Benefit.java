@@ -8,69 +8,71 @@ public class Benefit implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label("benefitType")
-	private java.lang.String benefitType;
-	@org.kie.api.definition.type.Label("covered")
-	private String covered;
-	@org.kie.api.definition.type.Description("Number of sessions, consultations, Days, Hours...")
-	@org.kie.api.definition.type.Label("item")
-	private java.lang.String item;
+	@org.kie.api.definition.type.Label(value = "name")
+	private java.lang.String name;
 
-	@org.kie.api.definition.type.Label("wardType")
-	private java.lang.String wardType;
+	@org.kie.api.definition.type.Label(value = "coverageFrom")
+	private java.lang.String coverageFrom;
 
-	@org.kie.api.definition.type.Label("coverageDays")
-	private int coverageDays;
+	@org.kie.api.definition.type.Label(value = "limit")
+	private java.lang.Double limit;
+
+	@org.kie.api.definition.type.Label(value = "coveredDays")
+	private java.lang.Double coveredDays;
+
+	@org.kie.api.definition.type.Label(value = "numberOfSession")
+	private java.lang.Double numberOfSession;
 	public Benefit() {
 	}
 
-	public java.lang.String getBenefitType() {
-		return this.benefitType;
+	public java.lang.String getName() {
+		return this.name;
 	}
 
-	public void setBenefitType(java.lang.String benefitType) {
-		this.benefitType = benefitType;
+	public void setName(java.lang.String name) {
+		this.name = name;
 	}
 
-	public java.lang.String getItem() {
-		return this.item;
+	public java.lang.String getCoverageFrom() {
+		return this.coverageFrom;
 	}
 
-	public void setItem(java.lang.String item) {
-		this.item = item;
+	public void setCoverageFrom(java.lang.String coverageFrom) {
+		this.coverageFrom = coverageFrom;
 	}
 
-	public java.lang.String getWardType() {
-		return this.wardType;
+	public java.lang.Double getLimit() {
+		return this.limit;
 	}
 
-	public void setWardType(java.lang.String wardType) {
-		this.wardType = wardType;
+	public void setLimit(java.lang.Double limit) {
+		this.limit = limit;
 	}
 
-	public int getCoverageDays() {
-		return this.coverageDays;
+	public java.lang.Double getCoveredDays() {
+		return this.coveredDays;
 	}
 
-	public void setCoverageDays(int coverageDays) {
-		this.coverageDays = coverageDays;
+	public void setCoveredDays(java.lang.Double coveredDays) {
+		this.coveredDays = coveredDays;
 	}
 
-	public java.lang.String getCovered() {
-		return this.covered;
+	public java.lang.Double getNumberOfSession() {
+		return this.numberOfSession;
 	}
 
-	public void setCovered(java.lang.String covered) {
-		this.covered = covered;
+	public void setNumberOfSession(java.lang.Double numberOfSession) {
+		this.numberOfSession = numberOfSession;
 	}
 
-	public Benefit(java.lang.String benefitType, java.lang.String covered,
-			java.lang.String item, java.lang.String wardType, int coverageDays) {
-		this.benefitType = benefitType;
-		this.covered = covered;
-		this.item = item;
-		this.wardType = wardType;
-		this.coverageDays = coverageDays;
+	public Benefit(java.lang.String name, java.lang.String coverageFrom,
+			java.lang.Double limit, java.lang.Double coveredDays,
+			java.lang.Double numberOfSession) {
+		this.name = name;
+		this.coverageFrom = coverageFrom;
+		this.limit = limit;
+		this.coveredDays = coveredDays;
+		this.numberOfSession = numberOfSession;
 	}
 
 }
