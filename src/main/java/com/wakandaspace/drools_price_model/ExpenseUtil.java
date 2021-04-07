@@ -6,14 +6,14 @@ package com.wakandaspace.drools_price_model;
 
 public class ExpenseUtil implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public ExpenseUtil() {
-    }
+	public ExpenseUtil() {
+	}
 
-    public static java.util.List<com.wakandaspace.drools_price_model.Expense> getExpenses = new java.util.ArrayList<com.wakandaspace.drools_price_model.Expanse>() {
+	public static java.util.List<com.wakandaspace.drools_price_model.Expense> getExpenses = new java.util.ArrayList<com.wakandaspace.drools_price_model.Expense>() {
 		{
 			add(new Expense(0.7, "Red Berryl Lite"));
 		}
-    };
+	};
 }
