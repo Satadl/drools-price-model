@@ -13,10 +13,10 @@ public class BenefitUtil implements java.io.Serializable {
 	public static java.util.List<com.wakandaspace.drools_price_model.Benefit> getRedBerylBenefits = new java.util.ArrayList<com.wakandaspace.drools_price_model.Benefit>() {
 		{
 			add(new Benefit("Basic outpatient and in-patient Treatment",
-					"Covered", "Red Berryl Lite"));
-			add(new Benefit("Ostetrician", "Covered", "Red Berryl Lite"));
+					"Covered", "GENERAL CONSULTATION"));
+			add(new Benefit("Ostetrician", "Covered", "SPECIALIST CONSULTATION"));
 			add(new Benefit("Dialysis and all related care", "1 session",
-					"Red Berryl Lite"));
+					"RENAL CARE"));
 
 		}
 	};
