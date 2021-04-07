@@ -6,12 +6,24 @@ package com.wakandaspace.drools_price_model;
 
 public class Expense implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Expense() {
-    }
+	@org.kie.api.definition.type.Label(value = "lossRatioTarget")
+	private java.lang.Double lossRatioTarget;
 
+	public Expense() {
+	}
 
+	public java.lang.Double getLossRatioTarget() {
+		return this.lossRatioTarget;
+	}
 
+	public void setLossRatioTarget(java.lang.Double lossRatioTarget) {
+		this.lossRatioTarget = lossRatioTarget;
+	}
+
+	public Expense(java.lang.Double lossRatioTarget) {
+		this.lossRatioTarget = lossRatioTarget;
+	}
 
 }
