@@ -8,19 +8,20 @@ public class Benefit implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "name")
+	@org.kie.api.definition.type.Label("name")
 	private java.lang.String name;
 
-	@org.kie.api.definition.type.Label(value = "coverageFrom")
+	@org.kie.api.definition.type.Label("coverageFrom")
 	private java.lang.String coverageFrom;
 
-	@org.kie.api.definition.type.Label(value = "limit")
+	@org.kie.api.definition.type.Label("limit")
 	private java.lang.Double limit;
 
-	@org.kie.api.definition.type.Label(value = "coveredDays")
+	@org.kie.api.definition.type.Label("coveredDays")
 	private java.lang.Double coveredDays;
 
-	@org.kie.api.definition.type.Label(value = "numberOfSession")
+	@org.kie.api.definition.type.Label("numberOfSession")
+	@org.kie.api.definition.type.Description("none=0\nunlimited=-1\nelse amount")
 	private java.lang.Double numberOfSession;
 	public Benefit() {
 	}
