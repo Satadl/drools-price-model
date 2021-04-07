@@ -17,7 +17,6 @@ public class BenefitUtil implements java.io.Serializable {
 			add(new Benefit("Ostetrician", "COVERED", "SPECIALIST CONSULTATION"));
 			add(new Benefit("Dialysis and all related care", "1 SESSION",
 					"RENAL CARE"));
-
 		}
 	};
 }
