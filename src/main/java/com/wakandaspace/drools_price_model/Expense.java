@@ -8,8 +8,11 @@ public class Expense implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "lossRatioTarget")
+	@org.kie.api.definition.type.Label("lossRatioTarget")
 	private java.lang.Double lossRatioTarget;
+
+	@org.kie.api.definition.type.Label(value = "planName")
+	private java.lang.String planName;
 
 	public Expense() {
 	}
@@ -22,8 +25,17 @@ public class Expense implements java.io.Serializable {
 		this.lossRatioTarget = lossRatioTarget;
 	}
 
-	public Expense(java.lang.Double lossRatioTarget) {
+	public java.lang.String getPlanName() {
+		return this.planName;
+	}
+
+	public void setPlanName(java.lang.String planName) {
+		this.planName = planName;
+	}
+
+	public Expense(java.lang.Double lossRatioTarget, java.lang.String planName) {
 		this.lossRatioTarget = lossRatioTarget;
+		this.planName = planName;
 	}
 
 }
