@@ -18,8 +18,8 @@ public class plan implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("benefitLimitPerEnrolle")
 	private double benefitLimitPerEnrolle;
 
-	@org.kie.api.definition.type.Label(value = "individualPremiumResult")
-	private java.lang.Double individualPremiumResult;
+	@org.kie.api.definition.type.Label("individualPremiumResult")
+	private double individualPremiumResult;
 
 	public plan() {
 	}
@@ -69,18 +69,17 @@ public class plan implements java.io.Serializable {
 		this.benefitLimitPerEnrolle = benefitLimitPerEnrolle;
 	}
 
-	public java.lang.Double getIndividualPremiumResult() {
+	public double getIndividualPremiumResult() {
 		return this.individualPremiumResult;
 	}
 
-	public void setIndividualPremiumResult(
-			java.lang.Double individualPremiumResult) {
+	public void setIndividualPremiumResult(double individualPremiumResult) {
 		this.individualPremiumResult = individualPremiumResult;
 	}
 
 	public plan(java.lang.String name, java.lang.String hospitalTier,
 			boolean preAuthorizationRequired, double benefitLimitPerEnrolle,
-			java.lang.Double individualPremiumResult) {
+			double individualPremiumResult) {
 		this.name = name;
 		this.hospitalTier = hospitalTier;
 		this.preAuthorizationRequired = preAuthorizationRequired;
