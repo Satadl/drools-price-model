@@ -8,12 +8,15 @@ public class Benefit implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "name")
+	@org.kie.api.definition.type.Label("name")
 	private java.lang.String name;
-	@org.kie.api.definition.type.Label(value = "value")
+	@org.kie.api.definition.type.Label("value")
 	private java.lang.String value;
-	@org.kie.api.definition.type.Label(value = "benefit_group")
+	@org.kie.api.definition.type.Label("benefit_group")
 	private java.lang.String benefit_group;
+
+	@org.kie.api.definition.type.Label(value = "calculationResult")
+	private double calculationResult;
 
 	public Benefit() {
 	}
@@ -42,11 +45,20 @@ public class Benefit implements java.io.Serializable {
 		this.benefit_group = benefit_group;
 	}
 
+	public double getCalculationResult() {
+		return this.calculationResult;
+	}
+
+	public void setCalculationResult(double calculationResult) {
+		this.calculationResult = calculationResult;
+	}
+
 	public Benefit(java.lang.String name, java.lang.String value,
-			java.lang.String benefit_group) {
+			java.lang.String benefit_group, double calculationResult) {
 		this.name = name;
 		this.value = value;
 		this.benefit_group = benefit_group;
+		this.calculationResult = calculationResult;
 	}
 
 }
