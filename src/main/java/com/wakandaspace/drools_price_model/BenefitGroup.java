@@ -15,14 +15,14 @@ public class BenefitGroup implements java.io.Serializable {
 	private java.lang.String coverageFrom;
 
 	@org.kie.api.definition.type.Label("limit")
-	private java.lang.Double limit;
+	private double limit;
 
 	@org.kie.api.definition.type.Label("coveredDays")
-	private java.lang.Double coveredDays;
+	private double coveredDays;
 
 	@org.kie.api.definition.type.Label("numberOfSession")
 	@org.kie.api.definition.type.Description("none=0\nunlimited=-1\nelse amount")
-	private java.lang.Double numberOfSession;
+	private double numberOfSession;
 	public BenefitGroup() {
 	}
 
@@ -42,33 +42,32 @@ public class BenefitGroup implements java.io.Serializable {
 		this.coverageFrom = coverageFrom;
 	}
 
-	public java.lang.Double getLimit() {
+	public double getLimit() {
 		return this.limit;
 	}
 
-	public void setLimit(java.lang.Double limit) {
+	public void setLimit(double limit) {
 		this.limit = limit;
 	}
 
-	public java.lang.Double getCoveredDays() {
+	public double getCoveredDays() {
 		return this.coveredDays;
 	}
 
-	public void setCoveredDays(java.lang.Double coveredDays) {
+	public void setCoveredDays(double coveredDays) {
 		this.coveredDays = coveredDays;
 	}
 
-	public java.lang.Double getNumberOfSession() {
+	public double getNumberOfSession() {
 		return this.numberOfSession;
 	}
 
-	public void setNumberOfSession(java.lang.Double numberOfSession) {
+	public void setNumberOfSession(double numberOfSession) {
 		this.numberOfSession = numberOfSession;
 	}
 
 	public BenefitGroup(java.lang.String name, java.lang.String coverageFrom,
-			java.lang.Double limit, java.lang.Double coveredDays,
-			java.lang.Double numberOfSession) {
+			double limit, double coveredDays, double numberOfSession) {
 		this.name = name;
 		this.coverageFrom = coverageFrom;
 		this.limit = limit;
