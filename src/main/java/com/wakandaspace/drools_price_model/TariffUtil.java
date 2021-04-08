@@ -35,5 +35,42 @@ public class TariffUtil implements java.io.Serializable {
 		}
 		return tarif;
 	}
+	/**
+	 * The function allows you to return the cost of a tiers according to the
+	 * benefit and the tiers
+	 */
+	public static double getCost(String benefit, String hospitalTier) {
+		double cost = 0;
+		for (Tariff tariff : getTariffsList) {
+			if (tariff.getBenefit().compareToIgnoreCase(benefit) == 0) {
+				if (hospitalTier.equalsIgnoreCase("tier1")) {
+					cost = tariff.getTier1();
+				}
+				if (hospitalTier.equalsIgnoreCase("tier2")) {
+					cost = tariff.getTier2();
+				}
+				if (hospitalTier.equalsIgnoreCase("tier3")) {
+					cost = tariff.getTier3();
+				}
+				if (hospitalTier.equalsIgnoreCase("tier4")) {
+					cost = tariff.getTier4();
+				}
+			}
+		}
+		return cost;
+	}
+	/**
+	 * The function allows you to return utilisation per 1000 according to the
+	 * benefit
+	 */
+	public static double getUtilisationPerBenefit(String benefit) {
+		double utilisation = 0;
+		for (Tariff tariff : getTariffsList) {
+			if (tariff.getBenefit().compareToIgnoreCase(benefit) == 0) {
+				utilisation = tariff.getUtilisation();
+			}
+		}
+		return utilisation;
+	}
 
 }
