@@ -13,7 +13,7 @@ public class ExpenseUtil implements java.io.Serializable {
 
 	public static java.util.List<com.wakandaspace.drools_price_model.Expense> getExpenses = new java.util.ArrayList<com.wakandaspace.drools_price_model.Expense>() {
 		{
-
+			add(new Expense(0.7));
 		}
 	};
 }
