@@ -11,5 +11,5 @@ salience 20
     then
        get the cost of the benefit
        get the use of the benefit
-       set the value of PMPM in calculationResult
+       //set the value of PMPM in calculationResult
 end
