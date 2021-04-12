@@ -1,7 +1,8 @@
 package com.wakandaspace.drools_price_model;
 
-import function com.wakandaspace.drools_price_model.BenefitUtil.*;
-import function com.wakandaspace.drools_price_model.Benefit.*;
+import function com.wakandaspace.drools_price_model.BenefitUtil.getCost;
+import function com.wakandaspace.drools_price_model.BenefitUtil.getUtilisationPerBenefit;
+import function com.wakandaspace.drools_price_model.Benefit.setCalculationResult;
 
 rule "PMPM calculation"
 salience 20
