@@ -1,12 +1,12 @@
 package com.wakandaspace.drools_price_model;
 
-import function com.wakandaspace.drools_price_model.BenefitUtil.getCost;
-import function com.wakandaspace.drools_price_model.BenefitUtil.getUtilisationPerBenefit;
+import function com.wakandaspace.drools_price_model.TariffUtil.getCost;
+import function com.wakandaspace.drools_price_model.TariffUtil.getUtilisationPerBenefit;
 
 rule "PMPM calculation"
 salience 20
     when
-        There is a plan
+        There is a plan 
         and There is a benefit
     then
        get the cost of the benefit
