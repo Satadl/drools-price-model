@@ -15,7 +15,7 @@ public class Benefit implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("benefit_group")
 	private java.lang.String benefit_group;
 
-	@org.kie.api.definition.type.Label(value = "calculationResult")
+	@org.kie.api.definition.type.Label("calculationResult")
 	private double calculationResult;
 
 	public Benefit() {
@@ -51,6 +51,13 @@ public class Benefit implements java.io.Serializable {
 
 	public void setCalculationResult(double calculationResult) {
 		this.calculationResult = calculationResult;
+	}
+
+	public Benefit(java.lang.String name, java.lang.String value,
+			java.lang.String benefit_group) {
+		this.name = name;
+		this.value = value;
+		this.benefit_group = benefit_group;
 	}
 
 	public Benefit(java.lang.String name, java.lang.String value,
