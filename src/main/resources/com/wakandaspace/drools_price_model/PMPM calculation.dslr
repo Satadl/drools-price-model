@@ -3,7 +3,8 @@ package com.wakandaspace.drools_price_model;
 rule "PMPM calculation"
 salience 20
     when
-        There is a plan and There is a benefit
+        There is a plan 
+        and There is a benefit
     then
        get the cost of the benefit
        get the use of the benefit
