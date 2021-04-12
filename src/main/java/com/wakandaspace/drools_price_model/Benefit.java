@@ -66,7 +66,7 @@ public class Benefit implements java.io.Serializable {
 		this.name = name;
 		this.value = value;
 		this.benefit_group = benefit_group;
-		this.calculationResult = calculationResult;
+		this.calculationResult = 1.0;
 	}
 
 }
