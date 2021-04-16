@@ -3,7 +3,7 @@ package com.wakandaspace.drools_price_model;
 import function com.wakandaspace.drools_price_model.TariffUtil.getCost;
 import function com.wakandaspace.drools_price_model.TariffUtil.getUtilisationPerBenefit;
 
-rule "PMPM calculation"
+/*rule "PMPM calculation"
 salience 20
     when
         There is a plan 
@@ -11,4 +11,4 @@ salience 20
     then
     Set the cost of the benefit in calculationResult
     Calculate the PMPM in calculationResult
-end
+end*/
