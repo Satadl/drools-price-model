@@ -13,7 +13,18 @@ public class ExpenseUtil implements java.io.Serializable {
 
 	public static java.util.List<com.wakandaspace.drools_price_model.Expense> getExpenses = new java.util.ArrayList<com.wakandaspace.drools_price_model.Expense>() {
 		{
-			add(new Expense(0.7));
+			add(new Expense(0.7, "Red Beryl Lite"));
+			add(new Expense(0.65, "Test Beryl"));
 		}
 	};
+
+	public static double getRatio(String plan) {
+		double lossRatio = 0.0;
+		for (Expense expense : getExpenses) {
+			if (plan.compareToIgnoreCase(expense.getPlan()) == 0) {
+				lossRatio = expense.getLossRatioTarget();
+			}
+		}
+		return lossRatio;
+	}
 }
