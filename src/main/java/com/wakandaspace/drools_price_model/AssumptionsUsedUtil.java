@@ -28,6 +28,6 @@ public class AssumptionsUsedUtil implements java.io.Serializable {
 				return assumptionsUsed.getFactor();
 			}
 		}
-		return 1;
+		return 1.0;
 	}
 }
