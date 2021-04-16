@@ -8,16 +8,16 @@ public class Plan implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "benefitLimitPerEnrolle")
+	@org.kie.api.definition.type.Label("benefitLimitPerEnrolle")
 	private double benefitLimitPerEnrolle;
-	@org.kie.api.definition.type.Label(value = "hospitalTier")
+	@org.kie.api.definition.type.Label("hospitalTier")
 	private java.lang.String hospitalTier;
-	@org.kie.api.definition.type.Label(value = "individualPremiumResult")
+	@org.kie.api.definition.type.Label("individualPremiumResult")
 	private double individualPremiumResult;
-	@org.kie.api.definition.type.Label(value = "name")
+	@org.kie.api.definition.type.Label("name")
 	private java.lang.String name;
-	@org.kie.api.definition.type.Label(value = "preAuthorizationRequired")
-	private boolean preAuthorizationRequired;
+	@org.kie.api.definition.type.Label("preAuthorizationRequired")
+	private String preAuthorizationRequired;
 
 	public Plan() {
 	}
@@ -54,17 +54,18 @@ public class Plan implements java.io.Serializable {
 		this.name = name;
 	}
 
-	public boolean isPreAuthorizationRequired() {
+	public java.lang.String getPreAuthorizationRequired() {
 		return this.preAuthorizationRequired;
 	}
 
-	public void setPreAuthorizationRequired(boolean preAuthorizationRequired) {
+	public void setPreAuthorizationRequired(
+			java.lang.String preAuthorizationRequired) {
 		this.preAuthorizationRequired = preAuthorizationRequired;
 	}
 
 	public Plan(double benefitLimitPerEnrolle, java.lang.String hospitalTier,
 			double individualPremiumResult, java.lang.String name,
-			boolean preAuthorizationRequired) {
+			java.lang.String preAuthorizationRequired) {
 		this.benefitLimitPerEnrolle = benefitLimitPerEnrolle;
 		this.hospitalTier = hospitalTier;
 		this.individualPremiumResult = individualPremiumResult;
