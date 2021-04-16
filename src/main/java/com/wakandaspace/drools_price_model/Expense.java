@@ -11,6 +11,9 @@ public class Expense implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("lossRatioTarget")
 	private double lossRatioTarget;
 
+	@org.kie.api.definition.type.Label(value = "plan")
+	private java.lang.String plan;
+
 	public Expense() {
 	}
 
@@ -22,8 +25,17 @@ public class Expense implements java.io.Serializable {
 		this.lossRatioTarget = lossRatioTarget;
 	}
 
-	public Expense(double lossRatioTarget) {
+	public java.lang.String getPlan() {
+		return this.plan;
+	}
+
+	public void setPlan(java.lang.String plan) {
+		this.plan = plan;
+	}
+
+	public Expense(double lossRatioTarget, java.lang.String plan) {
 		this.lossRatioTarget = lossRatioTarget;
+		this.plan = plan;
 	}
 
 }
