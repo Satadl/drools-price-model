@@ -14,6 +14,7 @@ public class LimitFactorUtil implements java.io.Serializable {
 	public static java.util.List<com.wakandaspace.drools_price_model.LimitFactor> getLimitFactorsList = new java.util.ArrayList<com.wakandaspace.drools_price_model.LimitFactor>() {
 		{
 			add(new LimitFactor(800000.0, 0.7981, 0.9701, 0.78172));
+			add(new LimitFactor(100000.0, 0.1813, 0.6583, 0.14583));
 			add(new LimitFactor(10000000.0, 1.0000, 0.9980, 0.99924));
 		}
 	};
@@ -33,5 +34,35 @@ public class LimitFactorUtil implements java.io.Serializable {
 			}
 		}
 		return limitfactor;
+	}
+	/**
+	 * the function takes a limit as input and returns a cost factor
+	 */
+	public static double getCostFactorPerLimit(double limit) {
+		double costFactor = 1;
+		if (limit > 10000000) {
+			return 1.0;
+		}
+		for (LimitFactor limitFactor : getLimitFactorsList) {
+			if (limitFactor.getLimit() == limit) {
+				costFactor = limitFactor.getCost();
+			}
+		}
+		return costFactor;
+	}
+	/**
+	 * the function takes a limit as input and returns all limit factor
+	 */
+	public static double getAllFactorPerLimit(double limit) {
+		double costFactor = 1;
+		if (limit > 10000000) {
+			return 1.0;
+		}
+		for (LimitFactor limitFactor : getLimitFactorsList) {
+			if (limitFactor.getLimit() == limit) {
+				costFactor = limitFactor.getAll();
+			}
+		}
+		return costFactor;
 	}
 }
