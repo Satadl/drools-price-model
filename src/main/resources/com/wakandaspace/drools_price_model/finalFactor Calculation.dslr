@@ -1,2 +1,29 @@
 package com.wakandaspace.drools_price_model;
 
+import function com.wakandaspace.drools_price_model.TariffUtil.getCost;
+import function com.wakandaspace.drools_price_model.TariffUtil.getUtilisationPerBenefit;
+import function com.wakandaspace.drools_price_model.LimitFactorUtil.getCostFactorPerLimit;
+import function com.wakandaspace.drools_price_model.AssumptionsUsedUtil.search;
+import function com.wakandaspace.drools_price_model.LimitFactorUtil.getAllFactorPerLimit;
+
+rule "Finalfactor calculation"
+salience 19
+    when
+        There is a benefitGroup
+        and There is a plan
+        and There is a benefit
+    then
+        Set the cost of the benefit per enrolle in calculationResult
+        Calculate the finalfactor in calculationResult
+end
+
+rule "Second Finalfactor calculation"
+salience 18
+    when
+        There is a benefit
+        There is a benefitGroup
+    then
+        Set calculationResult with the quarter factor
+        Set calculationResult with the selection factor
+end
+
