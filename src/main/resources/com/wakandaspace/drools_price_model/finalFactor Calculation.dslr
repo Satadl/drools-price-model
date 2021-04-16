@@ -18,7 +18,7 @@ salience 19
 end
 
 rule "Second Finalfactor calculation"
-salience 18
+salience 19
     when
         There is a benefit
         There is a benefitGroup
