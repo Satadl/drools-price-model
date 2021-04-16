@@ -9,7 +9,6 @@ salience 20
         There is a plan 
         and There is a benefit
     then
-       get the cost of the benefit
-       get the use of the benefit
-       //set the value of PMPM in calculationResult
+    Set the cost of the benefit in calculationResult
+    Calculate the PMPM in calculationResult
 end
