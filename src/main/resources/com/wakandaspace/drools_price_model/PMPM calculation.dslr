@@ -6,7 +6,8 @@ import function com.wakandaspace.drools_price_model.TariffUtil.getUtilisationPer
 rule "PMPM calculation"
 salience 20
     when
-        There is a plan 
+        There is a benefitGroup
+        and There is a plan 
         and There is a benefit
     then
     Set the cost of the benefit in calculationResult
