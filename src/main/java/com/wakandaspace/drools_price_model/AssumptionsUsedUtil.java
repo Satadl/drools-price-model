@@ -16,7 +16,7 @@ public class AssumptionsUsedUtil implements java.io.Serializable {
 			add(new AssumptionsUsed("Renal Care", "1 Session", 0.79));
 			add(new AssumptionsUsed("Coverage From", "1st quarter", 1.0000));
 			add(new AssumptionsUsed("Pre Authorization", "YES", 0.912));
-			add(new AssumptionsUsed("Pre Authorization", "NO", 1));
+			add(new AssumptionsUsed("Pre Authorization", "NO", 1.0));
 		}
 	};
 
