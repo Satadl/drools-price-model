@@ -18,7 +18,7 @@ public class Benefit implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("calculationResult")
 	private double calculationResult = 1.0;
 
-	@org.kie.api.definition.type.Label(value = "Group")
+	@org.kie.api.definition.type.Label("group")
 	private com.wakandaspace.drools_price_model.BenefitGroup group;
 
 	public Benefit() {
