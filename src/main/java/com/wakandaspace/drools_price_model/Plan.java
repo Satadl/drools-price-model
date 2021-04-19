@@ -13,7 +13,7 @@ public class Plan implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("hospitalTier")
 	private java.lang.String hospitalTier;
 	@org.kie.api.definition.type.Label("individualPremiumResult")
-	private double individualPremiumResult = 2.0;
+	private double individualPremiumResult = 1.0;
 	@org.kie.api.definition.type.Label("name")
 	private java.lang.String name;
 	@org.kie.api.definition.type.Label("preAuthorizationRequired")
