@@ -1,11 +1,11 @@
 #Calculation of PMPM
+[when] There is a benefitGroup = benefitGroup: BenefitGroup();
 [when] There is a benefit = benefit: Benefit();
 [when] There is a plan = plan: Plan();
 [then] Set the cost of the benefit in calculationResult = benefit.setCalculationResult(benefit.getCalculationResult() * getCost(benefit.getName(), plan.getHospitalTier()));
 [then] Calculate the PMPM in calculationResult = benefit.setCalculationResult(benefit.getCalculationResult() * (getUtilisationPerBenefit(benefit.getName())/ 12000));
 
 #Calculation of final factor
-[when] There is a benefitGroup = benefitGroup: BenefitGroup();
 [then] Set the cost of the benefit per enrolle in calculationResult = benefit.setCalculationResult(benefit.getCalculationResult()* getCostFactorPerLimit(plan.getBenefitLimitPerEnrolle()));
 [then] Calculate the finalfactor in calculationResult = benefit.setCalculationResult(benefit.getCalculationResult() *getAllFactorPerLimit(benefitGroup.getLimit()));
 
