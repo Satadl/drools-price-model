@@ -16,5 +16,5 @@
 #Calculation of the individual premium result
     #individualPremiumResult =  ((Total FinalFactor * factor(preauthorization)) /lossRatioTarget)*12
 [when] The sum of finalfactor of each benefit = sumFinalFactor :  Double() from accumulate (Benefit(benefit == benefit, calculationR : calculationResult), sum(calculationR));
-[then] Calculate the individual premium result = plan.setIndividualPremiumResult((sumFinalFactor * search("Pre Authorization",plan.getPreAuthorizationRequired()))/getRatio(plan.getName());
+[then] Calculate the individual premium result = plan.setIndividualPremiumResult((sumFinalFactor * search("Pre Authorization",plan.getPreAuthorizationRequired()))/getRatio(plan.getName()));
 #[then] Calculate the individual premium result = plan.setIndividualPremiumResult(((sumFinalFactor * search("Pre Authorization",plan.getPreAuthorizationRequired()))/getRatio(plan.getName()))*12);
