@@ -20,8 +20,8 @@ end
 rule "Second Finalfactor calculation"
 salience 19
     when
-        There is a benefit
         There is a benefitGroup
+        and There is a benefit
     then
         Set calculationResult with the quarter factor
         Set calculationResult with the selection factor
