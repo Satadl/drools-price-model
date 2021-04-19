@@ -1,7 +1,5 @@
 package com.wakandaspace.drools_price_model;
 
-/*package com.wakandaspace.drools_price_model;
-
 import function com.wakandaspace.drools_price_model.ExpenseUtil.getRatio;
 import function com.wakandaspace.drools_price_model.AssumptionsUsedUtil.search;
 
@@ -14,4 +12,3 @@ salience 17
     then
         Calculate the individual premium result
 end
-*/
