@@ -7,7 +7,8 @@
 
 #Calculation of final factor
 [then] Set the cost of the benefit per enrolle in calculationResult = benefit.setCalculationResult(benefit.getCalculationResult()* getCostFactorPerLimit(plan.getBenefitLimitPerEnrolle()));
-[then] Calculate the finalfactor in calculationResult = benefit.setCalculationResult(benefit.getCalculationResult() *getAllFactorPerLimit(benefitGroup.getLimit()));
+#[then] Calculate the finalfactor in calculationResult = benefit.setCalculationResult(benefit.getCalculationResult() *getAllFactorPerLimit(benefit.getGroup().getLimit()));
+#[then] Calculate the finalfactor in calculationResult = benefit.setCalculationResult(benefit.getCalculationResult() *getAllFactorPerLimit(benefitGroup.getLimit()));
 
 #Calculation of final factor with quarter and selection factor
 [then] Set calculationResult with the quarter factor = benefit.setCalculationResult(benefit.getCalculationResult()* search("Coverage From", benefitGroup.getCoverageFrom()));
