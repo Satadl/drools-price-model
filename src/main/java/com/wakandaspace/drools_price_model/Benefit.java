@@ -15,8 +15,8 @@ public class Benefit implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("calculationResult")
 	private double calculationResult = 1.0;
 
-	@org.kie.api.definition.type.Label("group")
-	private com.wakandaspace.drools_price_model.BenefitGroup group;
+	@org.kie.api.definition.type.Label(value = "benefit_group")
+	private com.wakandaspace.drools_price_model.BenefitGroup benefit_group;
 
 	public Benefit() {
 	}
@@ -58,21 +58,22 @@ public class Benefit implements java.io.Serializable {
 		this.calculationResult = 1.0;
 	}
 
-	public com.wakandaspace.drools_price_model.BenefitGroup getGroup() {
-		return this.group;
+	public com.wakandaspace.drools_price_model.BenefitGroup getBenefit_group() {
+		return this.benefit_group;
 	}
 
-	public void setGroup(com.wakandaspace.drools_price_model.BenefitGroup group) {
-		this.group = group;
+	public void setBenefit_group(
+			com.wakandaspace.drools_price_model.BenefitGroup benefit_group) {
+		this.benefit_group = benefit_group;
 	}
 
 	public Benefit(java.lang.String name, java.lang.String value,
 			double calculationResult,
-			com.wakandaspace.drools_price_model.BenefitGroup group) {
+			com.wakandaspace.drools_price_model.BenefitGroup benefit_group) {
 		this.name = name;
 		this.value = value;
 		this.calculationResult = calculationResult;
-		this.group = group;
+		this.benefit_group = benefit_group;
 	}
 
 }
