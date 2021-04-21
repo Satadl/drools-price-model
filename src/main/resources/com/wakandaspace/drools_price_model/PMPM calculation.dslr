@@ -10,5 +10,5 @@ salience 20
         and There is a benefit
     then
     Set the cost of the benefit in calculationResult
-    Calculate the PMPM in calculationResult
+    Calculate the cost with the utilisation per 1000
 end
