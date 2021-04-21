@@ -13,8 +13,8 @@
 #Calculation of final factor with quarter and selection factor
     #[then] Set calculationResult with the quarter factor = benefit.setCalculationResult(benefit.getCalculationResult()* search("Coverage From", benefitGroup.getCoverageFrom()));
     #[then] Set calculationResult with the selection factor = benefit.setCalculationResult(benefit.getCalculationResult() * search(benefitGroup.getName(), benefit.getValue()));
-[then] Set calculationResult with the quarter factor = benefit.setCalculationResult(benefit.getCalculationResult()* search("Coverage From", benefit.getGroup().getCoverageFrom()));
-[then] Set calculationResult with the selection factor = benefit.setCalculationResult(benefit.getCalculationResult() * search(benefit.getGroup().getName(), benefit.getValue()));
+[then] Set calculationResult with the quarter factor = benefit.setCalculationResult(benefit.getCalculationResult()* search("Coverage From", benefit.getBenefit_group().getCoverageFrom()));
+[then] Set calculationResult with the selection factor = benefit.setCalculationResult(benefit.getCalculationResult() * search(benefit.getBenefit_group().getName(), benefit.getValue()));
 
 
 #Calculation of the individual premium result
