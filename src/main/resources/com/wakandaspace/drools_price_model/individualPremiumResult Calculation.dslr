@@ -9,7 +9,7 @@ salience 17
         There is a benefit
         and There is a plan
         and There is a Expense
-        and The sum of finalfactor of each benefit
+        and Calculate The sum of finalfactor of each benefit
     then
         Calculate the individual premium result
 end
