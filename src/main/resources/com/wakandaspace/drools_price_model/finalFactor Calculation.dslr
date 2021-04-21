@@ -12,8 +12,8 @@ salience 19
         There is a plan
         and There is a benefit
     then
-        Set the cost of the benefit per enrolle in calculationResult
-        Calculate the finalfactor in calculationResult
+        Calculate the cost factor for limit with PMPM and set it in calculationResult
+        Set calculationResult with the cost factor
 end
 
 rule "Second Finalfactor calculation"
