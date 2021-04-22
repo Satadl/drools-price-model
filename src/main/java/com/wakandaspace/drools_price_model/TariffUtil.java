@@ -341,6 +341,10 @@ public class TariffUtil implements java.io.Serializable {
 			add(new Tariff("Lenses and Frames(Including Contact lenses)",
 					2000.0, 1200.0, 300.0, 200.0, 85.0));
 
+			// Dental care
+			add(new Tariff("Specialist Consultation", 8000.0, 7000.0, 2000.0,
+					1700.0, 32.0));
+
 			//
 			add(new Tariff("Dialysis and all related care", 600.0, 500.0,
 					205000.0, 200000.0, 1.5));
