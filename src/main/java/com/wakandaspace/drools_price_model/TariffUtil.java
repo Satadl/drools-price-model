@@ -325,6 +325,22 @@ public class TariffUtil implements java.io.Serializable {
 					"Accommodation for parents/relatives (Excludes Feeding)",
 					12000.0, 10000.0, 2700.0, 1700.0, 5.0));
 
+			// Intensive care
+			add(new Tariff("ICU and ICU-related care", 450000.0, 350000.0,
+					275000.0, 250000.0, 1.5));
+
+			// Eye/Optical care
+			add(new Tariff("Specialist Ophtalmologist Consultation", 2000.0,
+					1200.0, 300.0, 200.0, 65.0));
+			add(new Tariff("Treatment of acute and chronic ocular infections",
+					2000.0, 1200.0, 300.0, 200.0, 43.0));
+			add(new Tariff("Basic ocular Tests", 2000.0, 1200.0, 300.0, 200.0,
+					23.0));
+			add(new Tariff("Advanced Ocular Tests", 5000.0, 2500.0, 500.0,
+					400.0, 11.0));
+			add(new Tariff("Lenses and Frames(Including Contact lenses)",
+					2000.0, 1200.0, 300.0, 200.0, 85.0));
+
 			//
 			add(new Tariff("Dialysis and all related care", 600.0, 500.0,
 					205000.0, 200000.0, 1.5));
