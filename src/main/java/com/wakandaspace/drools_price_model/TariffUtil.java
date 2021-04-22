@@ -30,6 +30,18 @@ public class TariffUtil implements java.io.Serializable {
 			add(new Tariff("ENT Surgeon (Otorhinolaryngologist)", 30000.0,
 					25000.0, 6700.0, 5000.0, 16.0));
 			add(new Tariff("Urologist", 27000.0, 26000.0, 8400.0, 7700.0, 4.0));
+			add(new Tariff("Orthopedic Surgeon", 250000.0, 225000.0, 66700.0,
+					33400.0, 12.0));
+			add(new Tariff("Gastroenterologist", 250000.0, 225000.0, 66700.0,
+					33400.0, 4.0));
+			add(new Tariff("Cardiologist", 250000.0, 225000.0, 66700.0,
+					33400.0, 3.0));
+			add(new Tariff("Neurologist", 250000.0, 225000.0, 66700.0, 33400.0,
+					5.0));
+			add(new Tariff("Nephrologist", 250000.0, 225000.0, 66700.0,
+					33400.0, 6.0));
+			add(new Tariff("Psychiatrist", 250000.0, 225000.0, 66700.0,
+					33400.0, 4.0));
 			add(new Tariff("Dialysis and all related care", 225000.0, 220000.0,
 					205000.0, 200000.0, 1.5));
 		}
