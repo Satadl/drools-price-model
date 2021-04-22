@@ -321,8 +321,10 @@ public class TariffUtil implements java.io.Serializable {
 					12000.0, 10000.0, 2500.0, 2200.0, 4.0));
 			add(new Tariff("Accomodation for-in patient care", 15000.0,
 					10000.0, 2400.0, 1700.0, 12.0));
-			add(new Tariff("Accommodation for parents/relatives (Excludes)",
-					15000.0, 10000.0, 2400.0, 1700.0, 12.0));
+			add(new Tariff(
+					"Accommodation for parents/relatives (Excludes Feeding)",
+					12000.0, 10000.0, 2700.0, 1700.0, 5.0));
+
 			//
 			add(new Tariff("Dialysis and all related care", 600.0, 500.0,
 					205000.0, 200000.0, 1.5));
