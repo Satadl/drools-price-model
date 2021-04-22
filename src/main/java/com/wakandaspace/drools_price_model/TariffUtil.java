@@ -213,18 +213,73 @@ public class TariffUtil implements java.io.Serializable {
 			// Microbiology and parasitology
 			add(new Tariff("Malaria parasite(MP))", 600.0, 500.0, 400.0, 200.0,
 					2.0));
-			add(new Tariff("Widal)", 2400.0, 2000.0, 1500.0, 500.0, 1.0));
-			add(new Tariff("Urine M/C/S)", 1200.0, 1000.0, 1000.0, 400.0, 2.0));
-			add(new Tariff("Endocervical Swab(ECS) M/C/S)", 600.0, 500.0,
-					500.0, 200.0, 3.0));
-			add(new Tariff("High Vaginal Swab(HVS) M/C/S)", 900.0, 750.0,
-					750.0, 300.0, 2.0));
-			add(new Tariff("Urethral Swab M/C/S)", 960.0, 800.0, 500.0, 200.0,
+			add(new Tariff("Widal", 2400.0, 2000.0, 1500.0, 500.0, 1.0));
+			add(new Tariff("Urine M/C/S", 1200.0, 1000.0, 1000.0, 400.0, 2.0));
+			add(new Tariff("Endocervical Swab(ECS) M/C/S", 600.0, 500.0, 500.0,
+					200.0, 3.0));
+			add(new Tariff("High Vaginal Swab(HVS) M/C/S", 900.0, 750.0, 750.0,
+					300.0, 2.0));
+			add(new Tariff("Urethral Swab M/C/S", 960.0, 800.0, 500.0, 200.0,
 					3.0));
-			add(new Tariff("Throat Swab M/C/S)", 600.0, 500.0, 500.0, 200.0,
+			add(new Tariff("Throat Swab M/C/S", 600.0, 500.0, 500.0, 200.0, 3.0));
+			add(new Tariff("Ear Swab M/C/S", 600.0, 500.0, 500.0, 200.0, 4.0));
+			add(new Tariff("Wound Swab M/C/S", 720.0, 600.0, 600.0, 200.0, 3.0));
+			add(new Tariff("Eye Swab M/C/S", 1200.0, 1000.0, 1000.0, 400.0, 4.0));
+			add(new Tariff("Sputum M/C/S", 1200.0, 1000.0, 1000.0, 400.0, 6.0));
+			add(new Tariff("Aspirates M/C/S", 1200.0, 1000.0, 1000.0, 400.0,
+					5.0));
+			add(new Tariff("Stool M/C/S", 1200.0, 1000.0, 1000.0, 400.0, 3.0));
+			add(new Tariff("VDRL (Veneral disease research laboratory) Test",
+					1200.0, 1000.0, 1000.0, 400.0, 4.0));
+			add(new Tariff("H.Pylori", 1200.0, 1000.0, 1000.0, 400.0, 4.0));
+			add(new Tariff("Trypanosomes Screening", 1200.0, 1000.0, 1000.0,
+					400.0, 4.0));
+			add(new Tariff("Toxoplasma Screening", 1200.0, 1000.0, 1000.0,
+					400.0, 3.0));
+			add(new Tariff("Skin Snip for Microfilaria", 1200.0, 1000.0,
+					1000.0, 400.0, 4.0));
+			add(new Tariff("Skin Scraping for Fungi", 1200.0, 1000.0, 1000.0,
+					400.0, 3.0));
+			add(new Tariff("Leishmania Screening", 1200.0, 1000.0, 1000.0,
+					400.0, 2.0));
+			add(new Tariff("Mantoux/Heaf's Test", 1200.0, 1000.0, 1000.0,
+					400.0, 3.0));
+			add(new Tariff("Blood culture", 1200.0, 1000.0, 1000.0, 400.0, 2.0));
+			add(new Tariff("Stool Occult Blood", 1200.0, 1000.0, 1000.0, 400.0,
 					3.0));
-			add(new Tariff("Ear Swab M/C/S)", 600.0, 500.0, 500.0, 200.0, 4.0));
-			add(new Tariff("Wound Swab M/C/S)", 720.0, 600.0, 600.0, 200.0, 3.0));
+
+			// Advanced laboratory investigations/pathology
+			add(new Tariff("Blood Urea Nitrogen", 1800.0, 1500.0, 400.0, 300.0,
+					2.0));
+			add(new Tariff("Hepatitis B Surface Antigen (HBSAg)", 1800.0,
+					1500.0, 400.0, 300.0, 2.0));
+			add(new Tariff("HBA1C", 1800.0, 1500.0, 400.0, 300.0, 3.0));
+			add(new Tariff("Hepatitis C Screening", 1800.0, 1500.0, 400.0,
+					300.0, 32.0));
+			add(new Tariff("Hepatits B Screening", 1800.0, 1500.0, 400.0,
+					300.0, 4.0));
+			add(new Tariff("HIV Screening", 1800.0, 1500.0, 400.0, 300.0, 3.0));
+			add(new Tariff("HIV Confirmatory Test", 6000.0, 5000.0, 1400.0,
+					1000.0, 3.0));
+			add(new Tariff("G-6PD Screening", 1800.0, 1500.0, 400.0, 300.0, 3.0));
+			add(new Tariff("Thyroid Funtion Tests", 1800.0, 1500.0, 400.0,
+					300.0, 3.0));
+			add(new Tariff("Serum Uric Acid", 1800.0, 1500.0, 400.0, 300.0, 2.0));
+			add(new Tariff("Creatinine phosphokinase", 1800.0, 1500.0, 400.0,
+					300.0, 3.0));
+			add(new Tariff("Syphilis Screening", 1800.0, 1500.0, 400.0, 300.0,
+					5.0));
+			add(new Tariff("Serum immunoglobulins/Antibodies", 1800.0, 1500.0,
+					400.0, 300.0, 6.0));
+			add(new Tariff("Immunofluorescence assay", 1800.0, 1500.0, 400.0,
+					300.0, 5.0));
+			add(new Tariff(
+					"QBC Malaria Concentration And Fluorescent Staining",
+					1800.0, 1500.0, 400.0, 300.0, 7.0));
+			add(new Tariff("Pap Smear and Cytology", 8500.0, 8000.0, 2700.0,
+					2500.0, 3.0));
+			add(new Tariff("Prostate Specific Antigen", 7200.0, 6000.0, 1700.0,
+					1700.0, 4.0));
 
 			//
 			add(new Tariff("Dialysis and all related care", 600.0, 500.0,
