@@ -306,6 +306,23 @@ public class TariffUtil implements java.io.Serializable {
 			add(new Tariff("Sputum Acid Fast Bacili (AFB) Test", 1800.0,
 					1500.0, 400.0, 300.0, 6.0));
 
+			// Admissions and accommodation
+			add(new Tariff("Feedding for enrolles on admission", 2500.0,
+					2000.0, 500.0, 400.0, 75.0));
+			add(new Tariff("Hospital Ward Care", 15000.0, 10000.0, 2400.0,
+					1700.0, 125.0));
+			add(new Tariff("Skilled Medical and paramedical services", 20000.0,
+					15000.0, 4000.0, 3400.0, 13.0));
+			add(new Tariff("Supply of prescribed drugs", 1500.0, 1250.0, 400.0,
+					300.0, 765.0));
+			add(new Tariff("Supply of all medical and surgical consumables",
+					2500.0, 2000.0, 500.0, 400.0, 765.0));
+			add(new Tariff("Blood grouping, cross matching and transfusion",
+					12000.0, 10000.0, 2500.0, 2200.0, 4.0));
+			add(new Tariff("Accomodation for-in patient care", 15000.0,
+					10000.0, 2400.0, 1700.0, 12.0));
+			add(new Tariff("Accommodation for parents/relatives (Excludes)",
+					15000.0, 10000.0, 2400.0, 1700.0, 12.0));
 			//
 			add(new Tariff("Dialysis and all related care", 600.0, 500.0,
 					205000.0, 200000.0, 1.5));
