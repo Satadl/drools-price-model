@@ -143,6 +143,23 @@ public class TariffUtil implements java.io.Serializable {
 					3.0));
 			add(new Tariff("Anthroscopy", 45000.0, 40000.0, 11700.0, 8400.0,
 					2.0));
+			// Hemological tests
+			add(new Tariff("Hemoglobin(HB)", 600.0, 500.0, 400.0, 200.0, 2.0));
+			add(new Tariff("Packed cell volume(pcv)", 600.0, 500.0, 400.0,
+					200.0, 3.0));
+			add(new Tariff("White cell count(Total and differential)", 960.0,
+					800.0, 600.0, 200.0, 4.0));
+			add(new Tariff("Full Blood cound and credentials(FBC)", 1500.0,
+					1500.0, 1000.0, 400.0, 2.0));
+			add(new Tariff("White blood cell count", 960.0, 800.0, 600.0,
+					200.0, 4.0));
+			add(new Tariff("Red Blood cell /Reticulocyte count", 720.0, 600.0,
+					500.0, 200.0, 2.0));
+			add(new Tariff("Grouping and cross matching", 720.0, 600.0, 500.0,
+					200.0, 2.0));
+			add(new Tariff("Genotype(on request by clinician)", 720.0, 600.0,
+					500.0, 200.0, 2.0));
+			add(new Tariff("Blood group", 720.0, 600.0, 500.0, 200.0, 2.0));
 
 			//
 			add(new Tariff("Dialysis and all related care", 225000.0, 220000.0,
