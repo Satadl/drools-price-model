@@ -169,6 +169,42 @@ public class TariffUtil implements java.io.Serializable {
 			add(new Tariff("Blood pregnancy (Beta HCG) Test", 600.0, 500.0,
 					400.0, 200.0, 1.0));
 
+			// Chemistry investigations
+			add(new Tariff("Fasting Blood Sugar", 600.0, 600.0, 200.0, 200.0,
+					2.0));
+			add(new Tariff("Random Blood Sugar", 600.0, 600.0, 200.0, 200.0,
+					3.0));
+			add(new Tariff("2 Hours Post-prandial blood sugar", 600.0, 600.0,
+					200.0, 200.0, 2.0));
+			add(new Tariff("Oral glucose tolerance test (OGTT)", 1800.0,
+					1500.0, 400.0, 400.0, 3.0));
+			add(new Tariff("Glucose challenge test", 1800.0, 1500.0, 400.0,
+					400.0, 2.0));
+			add(new Tariff("Electrolytes, Urea and Creatinine", 2400.0, 2000.0,
+					600.0, 400.0, 3.0));
+			add(new Tariff("Lipid profile(fasting)(HDL,LDL,Triglyceride))",
+					4200.0, 3500.0, 1000.0, 900.0, 2.0));
+			add(new Tariff("Liver Function test (LFT)", 3600.0, 3000.0, 1000.0,
+					900.0, 4.0));
+			add(new Tariff("Serum ALT/SGPT", 600.0, 500.0, 200.0, 100.0, 2.0));
+			add(new Tariff("Serum AST/SGOT", 600.0, 500.0, 200.0, 100.0, 4.0));
+			add(new Tariff("Serum Sodium", 600.0, 500.0, 200.0, 100.0, 5.0));
+			add(new Tariff("Serum Calcium", 600.0, 500.0, 200.0, 100.0, 3.0));
+			add(new Tariff("Serum Magnesium", 600.0, 500.0, 200.0, 100.0, 4.0));
+			add(new Tariff("Serum Potasium", 600.0, 500.0, 200.0, 100.0, 6.0));
+			add(new Tariff("Serum Lithium", 600.0, 500.0, 200.0, 100.0, 4.0));
+			add(new Tariff("Serum Chloride", 600.0, 500.0, 400.0, 100.0, 6.0));
+			add(new Tariff("Serum Bicarbonate", 600.0, 500.0, 400.0, 100.0, 3.0));
+			add(new Tariff("Serum Alkaline Phospate", 600.0, 500.0, 400.0,
+					100.0, 3.0));
+			add(new Tariff("Serum Acid Phosphate", 600.0, 500.0, 400.0, 100.0,
+					2.0));
+			add(new Tariff("Serum Inorganic Phosphate", 600.0, 500.0, 400.0,
+					100.0, 2.0));
+			add(new Tariff("Serum Albumin", 600.0, 500.0, 400.0, 100.0, 2.0));
+			add(new Tariff("Serum Lactase Dehydrogenase", 600.0, 500.0, 400.0,
+					100.0, 1.0));
+
 			//
 			add(new Tariff("Dialysis and all related care", 225000.0, 220000.0,
 					205000.0, 200000.0, 1.5));
