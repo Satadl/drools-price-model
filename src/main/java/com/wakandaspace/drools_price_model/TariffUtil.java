@@ -160,6 +160,14 @@ public class TariffUtil implements java.io.Serializable {
 			add(new Tariff("Genotype(on request by clinician)", 720.0, 600.0,
 					500.0, 200.0, 2.0));
 			add(new Tariff("Blood group", 720.0, 600.0, 500.0, 200.0, 2.0));
+			add(new Tariff("Erythrocyte sedimentation Rate (ESR)", 600.0,
+					500.0, 400.0, 200.0, 2.0));
+			add(new Tariff("MCHC", 600.0, 500.0, 400.0, 200.0, 3.0));
+			add(new Tariff("MCH", 600.0, 500.0, 400.0, 200.0, 2.0));
+			add(new Tariff("MCV", 600.0, 500.0, 400.0, 200.0, 4.0));
+			add(new Tariff("Blood film", 600.0, 500.0, 400.0, 200.0, 2.0));
+			add(new Tariff("Blood pregnancy (Beta HCG) Test", 600.0, 500.0,
+					400.0, 200.0, 1.0));
 
 			//
 			add(new Tariff("Dialysis and all related care", 225000.0, 220000.0,
