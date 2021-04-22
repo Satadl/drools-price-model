@@ -107,7 +107,59 @@ public class TariffUtil implements java.io.Serializable {
 					700.0, 2.4));
 			add(new Tariff("Ultrasound Scan", 4000.0, 2500.0, 700.0, 700.0,
 					32.0));
+			// Advanced diagnosic imaging
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
+			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
+					11700.0, 8400.0, 12.0));
 
+			//
 			add(new Tariff("Dialysis and all related care", 225000.0, 220000.0,
 					205000.0, 200000.0, 1.5));
 		}
