@@ -214,6 +214,17 @@ public class TariffUtil implements java.io.Serializable {
 			add(new Tariff("Malaria parasite(MP))", 600.0, 500.0, 400.0, 200.0,
 					2.0));
 			add(new Tariff("Widal)", 2400.0, 2000.0, 1500.0, 500.0, 1.0));
+			add(new Tariff("Urine M/C/S)", 1200.0, 1000.0, 1000.0, 400.0, 2.0));
+			add(new Tariff("Endocervical Swab(ECS) M/C/S)", 600.0, 500.0,
+					500.0, 200.0, 3.0));
+			add(new Tariff("High Vaginal Swab(HVS) M/C/S)", 900.0, 750.0,
+					750.0, 300.0, 2.0));
+			add(new Tariff("Urethral Swab M/C/S)", 960.0, 800.0, 500.0, 200.0,
+					3.0));
+			add(new Tariff("Throat Swab M/C/S)", 600.0, 500.0, 500.0, 200.0,
+					3.0));
+			add(new Tariff("Ear Swab M/C/S)", 600.0, 500.0, 500.0, 200.0, 4.0));
+			add(new Tariff("Wound Swab M/C/S)", 720.0, 600.0, 600.0, 200.0, 3.0));
 
 			//
 			add(new Tariff("Dialysis and all related care", 600.0, 500.0,
