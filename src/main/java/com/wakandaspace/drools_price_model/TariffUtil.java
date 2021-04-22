@@ -280,6 +280,31 @@ public class TariffUtil implements java.io.Serializable {
 					2500.0, 3.0));
 			add(new Tariff("Prostate Specific Antigen", 7200.0, 6000.0, 1700.0,
 					1700.0, 4.0));
+			add(new Tariff("Protein Electrophoresis", 2400.0, 2000.0, 500.0,
+					400.0, 3.0));
+			add(new Tariff("CSF M/C/S (CSF Analysis)", 1800.0, 1500.0, 400.0,
+					300.0, 6.0));
+			add(new Tariff("Semen M/C/S", 1800.0, 1500.0, 400.0, 300.0, 4.0));
+			add(new Tariff("Serum Creatinine Phosphokinase", 1800.0, 1500.0,
+					400.0, 300.0, 2.0));
+			add(new Tariff("Serum Iron", 1800.0, 1500.0, 400.0, 300.0, 2.0));
+			add(new Tariff("24 Hour Creatinine Clearance", 1800.0, 1500.0,
+					400.0, 300.0, 3.0));
+			add(new Tariff("Coomb's Test(Indirect)", 1800.0, 1500.0, 400.0,
+					300.0, 3.0));
+			add(new Tariff("Coomb's Test(Direct)", 1800.0, 1500.0, 400.0,
+					300.0, 3.0));
+			add(new Tariff("Osmotic Fragility Test", 1800.0, 1500.0, 400.0,
+					300.0, 5.0));
+			add(new Tariff("Chlamydia Screening", 1800.0, 1500.0, 400.0, 300.0,
+					6.0));
+			add(new Tariff("Seminal Fluid Analysis (SFA)", 1800.0, 1500.0,
+					400.0, 300.0, 5.0));
+			add(new Tariff("Clotting Time", 1800.0, 1500.0, 400.0, 300.0, 6.0));
+			add(new Tariff("Bleeding Time", 1800.0, 1500.0, 400.0, 300.0, 6.0));
+			add(new Tariff("D-Dimer", 1800.0, 1500.0, 400.0, 300.0, 5.0));
+			add(new Tariff("Sputum Acid Fast Bacili (AFB) Test", 1800.0,
+					1500.0, 400.0, 300.0, 6.0));
 
 			//
 			add(new Tariff("Dialysis and all related care", 600.0, 500.0,
