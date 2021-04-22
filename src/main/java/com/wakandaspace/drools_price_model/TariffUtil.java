@@ -110,54 +110,39 @@ public class TariffUtil implements java.io.Serializable {
 			// Advanced diagnosic imaging
 			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
 					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
-			add(new Tariff("Doppler Ultrasound Scan", 45000.0, 40000.0,
-					11700.0, 8400.0, 12.0));
+			add(new Tariff("ECG(PRE AND POST EXERCISE)", 45000.0, 40000.0,
+					11700.0, 8400.0, 23.0));
+			add(new Tariff("CT Scan", 45000.0, 40000.0, 11700.0, 8400.0, 21.0));
+			add(new Tariff("MRI", 45000.0, 40000.0, 11700.0, 8400.0, 21.0));
+			add(new Tariff("Echocardiography", 45000.0, 40000.0, 11700.0,
+					8400.0, 4.0));
+			add(new Tariff("Protoscopy", 45000.0, 40000.0, 11700.0, 8400.0, 3.0));
+			add(new Tariff("Sigmoidoscopy", 45000.0, 40000.0, 11700.0, 8400.0,
+					2.0));
+			add(new Tariff("Upper GI Endoscopy", 45000.0, 40000.0, 11700.0,
+					8400.0, 2.0));
+			add(new Tariff("Endoscopic Ultrasound", 45000.0, 40000.0, 11700.0,
+					8400.0, 1.0));
+			add(new Tariff("Endoscopic retrogade cholangiopancreatography",
+					45000.0, 40000.0, 11700.0, 8400.0, 2.0));
+			add(new Tariff("Enteroscopy", 45000.0, 40000.0, 11700.0, 8400.0,
+					2.0));
+			add(new Tariff("Gastrocopy", 45000.0, 40000.0, 11700.0, 8400.0, 3.0));
+			add(new Tariff("Colonoscopy", 45000.0, 40000.0, 11700.0, 8400.0,
+					12.0));
+			add(new Tariff("Laryngoscopy(Direct and Indirect)", 45000.0,
+					40000.0, 11700.0, 8400.0, 2.0));
+			add(new Tariff("Bronchoscopy", 45000.0, 40000.0, 11700.0, 8400.0,
+					3.0));
+			add(new Tariff("Thoracoscopy", 45000.0, 40000.0, 11700.0, 8400.0,
+					1.0));
+			add(new Tariff("Hysteroscopy", 45000.0, 40000.0, 11700.0, 8400.0,
+					2.0));
+			add(new Tariff("Crystocopy", 45000.0, 40000.0, 11700.0, 8400.0, 1.0));
+			add(new Tariff("Laparoscopy", 45000.0, 40000.0, 11700.0, 8400.0,
+					3.0));
+			add(new Tariff("Anthroscopy", 45000.0, 40000.0, 11700.0, 8400.0,
+					2.0));
 
 			//
 			add(new Tariff("Dialysis and all related care", 225000.0, 220000.0,
