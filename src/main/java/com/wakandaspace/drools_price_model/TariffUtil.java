@@ -204,6 +204,12 @@ public class TariffUtil implements java.io.Serializable {
 			add(new Tariff("Serum Albumin", 600.0, 500.0, 400.0, 100.0, 2.0));
 			add(new Tariff("Serum Lactase Dehydrogenase", 600.0, 500.0, 400.0,
 					100.0, 1.0));
+			add(new Tariff("Serum Gamma Glutammyl Transferase", 600.0, 500.0,
+					400.0, 100.0, 2.0));
+			add(new Tariff("Prothrombin time(PT/INR)", 1200.0, 1000.0, 1000.0,
+					400.0, 1.0));
+			add(new Tariff("Serum Lactase Dehydrogenase", 960.0, 800.0, 600.0,
+					200.0, 1.0));
 
 			//
 			add(new Tariff("Dialysis and all related care", 225000.0, 220000.0,
