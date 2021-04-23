@@ -387,6 +387,27 @@ public class TariffUtil implements java.io.Serializable {
 					900.0, 78.0));
 			add(new Tariff("Number of sessions covered", 4000.0, 3500.0,
 					1000.0, 900.0, 1200.0));
+			// Obstetrics care
+			add(new Tariff(
+					"Antenatal care(INCL. specialist care and ANC drugs)",
+					60000.0, 50000.0, 35000.0, 25000.0, 32.0));
+			add(new Tariff("Delivery(SVD/NORMAL and COMPLICATED)", 70000.0,
+					50000.0, 40000.0, 35000.0, 3.0));
+			add(new Tariff("Delivery(Multiple)", 80000.0, 60000.0, 45000.0,
+					4000.0, 23.0));
+			add(new Tariff("Assisted Delivery", 12000.0, 10000.0, 7500.0,
+					7000.0, 23.0));
+			add(new Tariff("Therapeutic Abortion(Manual vacuum aspiration)",
+					22000.0, 20000.0, 20000.0, 15000.0, 2.0));
+			add(new Tariff("Cesarian section", 450000.0, 350000.0, 200000.0,
+					175000.0, 3.0));
+			// Infertility care
+			add(new Tariff(
+					"Fertility specialist consultation  and counselling",
+					50000.0, 47500.0, 42500.0, 40000.0, 23.0));
+			add(new Tariff("Fertility investigations", 15000.0, 12500.0,
+					10000.0, 5000.0, 2.0));
+
 			//
 			add(new Tariff("Dialysis and all related care", 600.0, 500.0,
 					205000.0, 200000.0, 1.5));
