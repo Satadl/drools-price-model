@@ -371,6 +371,22 @@ public class TariffUtil implements java.io.Serializable {
 					7.0));
 			add(new Tariff("Incision and Drainage", 5000.0, 4500.0, 1400.0,
 					1000.0, 3.0));
+
+			// Physiotherapy care
+			add(new Tariff("Specialist consultation", 15000.0, 10000.0, 3000.0,
+					2700.0, 50.0));
+			add(new Tariff("Routine fitness examination", 2000.0, 20000.0,
+					700.0, 700.0, 32.0));
+			add(new Tariff("Preventive Counselling on referral", 10000.0,
+					10000.0, 400.0, 400.0, 15.0));
+			add(new Tariff("Cervical Collar and Crutches", 4000.0, 3500.0,
+					1000.0, 900.0, 5.0));
+			add(new Tariff("Walker", 4000.0, 3500.0, 1000.0, 900.0, 4.0));
+			add(new Tariff("Pain therapy", 4000.0, 3500.0, 1000.0, 900.0, 44.0));
+			add(new Tariff("Acces to prescribed drugs", 4000.0, 3500.0, 1000.0,
+					900.0, 78.0));
+			add(new Tariff("Number of sessions covered", 4000.0, 3500.0,
+					1000.0, 900.0, 1200.0));
 			//
 			add(new Tariff("Dialysis and all related care", 600.0, 500.0,
 					205000.0, 200000.0, 1.5));
