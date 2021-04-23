@@ -420,6 +420,15 @@ public class TariffUtil implements java.io.Serializable {
 			add(new Tariff("Vitamin A", 750.0, 500.0, 100.0, 100.0, 56.0));
 			add(new Tariff("Measles", 2400.0, 2000.0, 400.0, 200.0, 4.0));
 			add(new Tariff("Yelow fever", 2400.0, 2000.0, 400.0, 200.0, 6.0));
+			// Additionnal immunization(0-5 years)
+			add(new Tariff("Chicken pox", 10000.0, 10000.0, 1700.0, 1700.0,
+					54.0));
+			add(new Tariff("Meningitis", 13500.0, 12000.0, 3000.0, 2900.0, 33.0));
+			add(new Tariff("MMR", 6000.0, 5000.0, 1400.0, 1400.0, 2.0));
+			add(new Tariff("Pneumococcal", 7000.0, 6000.0, 1400.0, 1400.0, 23.0));
+			add(new Tariff("Rotavirus", 10000.0, 10000.0, 3400.0, 3400.0, 3.0));
+			add(new Tariff("Thyphoid vaccine", 7000.0, 6500.0, 2000.0, 2000.0,
+					2.0));
 
 			//
 			add(new Tariff("Dialysis and all related care", 600.0, 500.0,
