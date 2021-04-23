@@ -526,6 +526,33 @@ public class TariffUtil implements java.io.Serializable {
 			add(new Tariff("Urinalysis", 5000.0, 2000.0, 1500.0, 1000.0, 90.0));
 			add(new Tariff("Chest X-ray", 5000.0, 2000.0, 1500.0, 1000.0, 90.0));
 
+			// Ambulance services
+			add(new Tariff("Movement of patients to and from hospital",
+					15000.0, 12500.0, 10000.0, 5000.0, 45.0));
+			// Psychiatry care
+			add(new Tariff("Mental ilness with certified psychiatrists",
+					6000.0, 5000.0, 3000.0, 2500.0, 35.0));
+			// HIV care and treatment
+			add(new Tariff("Specialist consulltation", 4000.0, 2500.0, 700.0,
+					500.0, 50.0));
+			add(new Tariff("Specialist drug therapy", 4000.0, 2500.0, 700.0,
+					500.0, 45.0));
+			add(new Tariff("Counselling sessions", 2000.0, 1500.0, 400.0,
+					400.0, 30.0));
+			// Seeking second opinion
+			add(new Tariff(
+					"Diagnosis confirmation(secondary-tertiary care centres)",
+					5000.0, 5000.0, 5000.0, 5000.0, 1000.0));
+			add(new Tariff(
+					"Treatment confirmation(secondary-tertiary care centres)",
+					5000.0, 5000.0, 5000.0, 5000.0, 1000.0));
+			add(new Tariff(
+					"International confirmation from specialist  outside africa",
+					6500.0, 6500.0, 6500.0, 6500.0, 1000.0));
+			// Mortuary services
+			add(new Tariff("After-demise compensation", 40000.0, 40000.0,
+					40000.0, 40000.0, 85.0));
+
 		}
 	};
 	/**
