@@ -344,7 +344,33 @@ public class TariffUtil implements java.io.Serializable {
 			// Dental care
 			add(new Tariff("Specialist Consultation", 8000.0, 7000.0, 2000.0,
 					1700.0, 32.0));
-
+			add(new Tariff("Routine dental examination", 2000.0, 1500.0, 400.0,
+					400.0, 22.0));
+			add(new Tariff("Preventive dental care and counselling", 1200.0,
+					1000.0, 300.0, 300.0, 1.0));
+			add(new Tariff("Dental pain therapy", 1200.0, 1000.0, 300.0, 300.0,
+					2.0));
+			add(new Tariff("Treatment of acute  and chronic dental infections",
+					1200.0, 1000.0, 300.0, 300.0, 1.0));
+			add(new Tariff("Acces to prescribed drugs", 1000.0, 800.0, 200.0,
+					200.0, 2.0));
+			add(new Tariff("Surgical extraction", 2000.0, 1600.0, 500.0, 400.0,
+					3.0));
+			add(new Tariff("Non-surgical extraction", 1200.0, 1000.0, 300.0,
+					300.0, 4.0));
+			add(new Tariff("Root canal therapy", 5000.0, 4000.0, 1000.0, 900.0,
+					5.0));
+			add(new Tariff("Scaling and polishing", 1200.0, 1000.0, 300.0,
+					300.0, 6.0));
+			add(new Tariff("Operculectomy", 1200.0, 1000.0, 300.0, 300.0, 6.0));
+			add(new Tariff("Gingival curettage", 1200.0, 1000.0, 300.0, 300.0,
+					3.0));
+			add(new Tariff("Composite filling", 1200.0, 1000.0, 300.0, 300.0,
+					6.0));
+			add(new Tariff("Amalgame filling", 1200.0, 1000.0, 300.0, 300.0,
+					7.0));
+			add(new Tariff("Incision and Drainage", 5000.0, 4500.0, 1400.0,
+					1000.0, 3.0));
 			//
 			add(new Tariff("Dialysis and all related care", 600.0, 500.0,
 					205000.0, 200000.0, 1.5));
