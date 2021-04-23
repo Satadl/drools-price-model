@@ -442,9 +442,64 @@ public class TariffUtil implements java.io.Serializable {
 			add(new Tariff(
 					"Care for babies NOT actively on the plan(up to 6 weeks)",
 					7500.0, 7500.0, 7500.0, 7500.0, 15.0));
+			// Family planning
+			add(new Tariff("Copper T Intrauterine Device", 2500.0, 2200.0,
+					700.0, 700.0, 34.0));
+			add(new Tariff("Lippes loop Intrauterine Device", 2500.0, 2200.0,
+					700.0, 700.0, 23.0));
+			add(new Tariff("Injectibles(Depo Provera, Noristerat)", 2500.0,
+					2200.0, 700.0, 700.0, 2.0));
+			add(new Tariff("Contraceptive pills", 1500.0, 1250.0, 400.0, 400.0,
+					2.0));
+			add(new Tariff("Jadelle Implant", 7000.0, 6500.0, 1700.0, 1700.0,
+					3.0));
+			add(new Tariff("Implanon", 2000.0, 2000.0, 700.0, 700.0, 2.0));
+			add(new Tariff("Norplant", 2000.0, 2000.0, 700.0, 700.0, 7.0));
 
-			//
-			add(new Tariff("Dialysis and all related care", 600.0, 500.0,
+			// GYM
+			add(new Tariff("Access to gyms for regular exercise", 15000.0,
+					15000.0, 15000.0, 15000.0, 500.0));
+			// SPA
+			add(new Tariff("Facials", 20000.0, 20000.0, 20000.0, 20000.0, 34.0));
+			add(new Tariff("Body massage", 20000.0, 20000.0, 20000.0, 20000.0,
+					23.0));
+
+			// Minor surgeries
+			add(new Tariff("Wound dressing", 1200.0, 1100.0, 400.0, 400.0, 23.0));
+			add(new Tariff(
+					"Incision & drainage of acute and chronique abscesses",
+					2500.0, 2300.0, 700.0, 700.0, 2.0));
+			add(new Tariff("Suturing of minors wound", 1200.0, 1100.0, 400.0,
+					400.0, 23.0));
+			add(new Tariff("Suturing of lacerations", 1200.0, 1100.0, 400.0,
+					400.0, 22.0));
+			add(new Tariff("Ear percing", 2000.0, 2000.0, 700.0, 700.0, 33.0));
+			add(new Tariff("Male circumcision", 8500.0, 7000.0, 2000.0, 1700.0,
+					44.0));
+			add(new Tariff("Lump biopsy", 1200.0, 1100.0, 400.0, 400.0, 33.0));
+			add(new Tariff("Ear Aural irrigation", 2000.0, 2000.0, 700.0,
+					700.0, 44.0));
+			add(new Tariff("Ear Antral washout", 2000.0, 2000.0, 700.0, 700.0,
+					33.0));
+			add(new Tariff("Wound debridment", 1200.0, 1100.0, 400.0, 400.0,
+					22.0));
+			add(new Tariff("Intermediate surgeries", 200000.0, 175000.0,
+					50000.0, 40000.0, 23.0));
+			add(new Tariff("Major surgeries", 250000.0, 225000.0, 220000.0,
+					200000.0, 6.0));
+			// Cancer care
+			add(new Tariff("Oncologist/cancer specialist visits", 50000.0,
+					50000.0, 50000.0, 50000.0, 15.0));
+			add(new Tariff("Oncologist Investigations", 200000.0, 200000.0,
+					200000.0, 200000.0, 10.0));
+			add(new Tariff("Cancer related radiological investigations",
+					50000.0, 50000.0, 50000.0, 50000.0, 1.0));
+			add(new Tariff("Surgical cancer care", 100000.0, 100000.0,
+					100000.0, 100000.0, 2.0));
+			add(new Tariff("Chemotherapy", 100000.0, 100000.0, 100000.0,
+					100000.0, 2.0));
+			// renal care dialysis
+			add(new Tariff("Dialysis and all related care", 225000.0, 220000.0,
 					205000.0, 200000.0, 1.5));
 		}
 	};
