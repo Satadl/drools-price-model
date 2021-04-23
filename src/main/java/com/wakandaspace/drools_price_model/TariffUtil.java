@@ -399,7 +399,7 @@ public class TariffUtil implements java.io.Serializable {
 					7000.0, 23.0));
 			add(new Tariff("Therapeutic Abortion(Manual vacuum aspiration)",
 					22000.0, 20000.0, 20000.0, 15000.0, 2.0));
-			add(new Tariff("Cesarian section", 450000.0, 350000.0, 200000.0,
+			add(new Tariff("Caesarian section", 450000.0, 350000.0, 200000.0,
 					175000.0, 3.0));
 			// Infertility care
 			add(new Tariff(
@@ -407,6 +407,19 @@ public class TariffUtil implements java.io.Serializable {
 					50000.0, 47500.0, 42500.0, 40000.0, 23.0));
 			add(new Tariff("Fertility investigations", 15000.0, 12500.0,
 					10000.0, 5000.0, 2.0));
+			// Incubator care
+			add(new Tariff("Neonatal/ Special baby are unit", 15000.0, 12000.0,
+					10000.0, 8000.0, 13.0));
+
+			// NPI IMMUNIZATION (0-5years)
+			add(new Tariff("BCG", 1200.0, 1000.0, 200.0, 200.0, 2.0));
+			add(new Tariff("OPV/IPV", 900.0, 750.0, 200.0, 200.0, 4.0));
+			add(new Tariff("Pentavalent", 2500.0, 2400.0, 700.0, 500.0, 3.0));
+			add(new Tariff("Hepatitis B", 1200.0, 1000.0, 400.0, 400.0, 5.0));
+			add(new Tariff("DPT", 900.0, 750.0, 200.0, 200.0, 4.0));
+			add(new Tariff("Vitamin A", 750.0, 500.0, 100.0, 100.0, 56.0));
+			add(new Tariff("Measles", 2400.0, 2000.0, 400.0, 200.0, 4.0));
+			add(new Tariff("Yelow fever", 2400.0, 2000.0, 400.0, 200.0, 6.0));
 
 			//
 			add(new Tariff("Dialysis and all related care", 600.0, 500.0,
