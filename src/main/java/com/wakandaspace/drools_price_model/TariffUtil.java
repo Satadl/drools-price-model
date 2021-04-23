@@ -501,6 +501,31 @@ public class TariffUtil implements java.io.Serializable {
 			// renal care dialysis
 			add(new Tariff("Dialysis and all related care", 225000.0, 220000.0,
 					205000.0, 200000.0, 1.5));
+
+			// Wellness checks
+			add(new Tariff("BMI Check", 5000.0, 2000.0, 1500.0, 1000.0, 90));
+			add(new Tariff("General Physical examination", 5000.0, 2000.0,
+					1500.0, 1000.0, 90.0));
+			add(new Tariff("Blood pressure Check(Hypertension screening)",
+					5000.0, 2000.0, 1500.0, 1000.0, 90.0));
+			add(new Tariff("Blood Sugar check(diabetes screening)", 5000.0,
+					2000.0, 1500.0, 1000.0, 90.0));
+			add(new Tariff("Blood cholesterol check", 5000.0, 2000.0, 1500.0,
+					1000.0, 90.0));
+			add(new Tariff("Annual Visual Acuity Check(Using Snellen chart)",
+					5000.0, 2000.0, 1500.0, 1000.0, 90.0));
+			add(new Tariff("Mammography(for women>=40years of age)", 5000.0,
+					2000.0, 1500.0, 1000.0, 90.0));
+			add(new Tariff("Pap smear", 5000.0, 2000.0, 1500.0, 1000.0, 90.0));
+			add(new Tariff("PSA Check(for men>= 40 years of age)", 5000.0,
+					2000.0, 1500.0, 1000.0, 90.0));
+			add(new Tariff("Liver function test", 5000.0, 2000.0, 1500.0,
+					1000.0, 90.0));
+			add(new Tariff("Kidney function tests(E,U and Cr)", 5000.0, 2000.0,
+					1500.0, 1000.0, 90.0));
+			add(new Tariff("Urinalysis", 5000.0, 2000.0, 1500.0, 1000.0, 90.0));
+			add(new Tariff("Chest X-ray", 5000.0, 2000.0, 1500.0, 1000.0, 90.0));
+
 		}
 	};
 	/**
