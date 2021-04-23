@@ -436,6 +436,13 @@ public class TariffUtil implements java.io.Serializable {
 			add(new Tariff("Yellow fever", 2000.0, 1500.0, 400.0, 400.0, 23.0));
 			add(new Tariff("Meningitis", 15000.0, 12500.0, 3400.0, 2900.0, 2.0));
 
+			// Care for the newborn
+			add(new Tariff("Care for babies actively on the plan", 5000.0,
+					5000.0, 5000.0, 5000.0, 25.0));
+			add(new Tariff(
+					"Care for babies NOT actively on the plan(up to 6 weeks)",
+					7500.0, 7500.0, 7500.0, 7500.0, 15.0));
+
 			//
 			add(new Tariff("Dialysis and all related care", 600.0, 500.0,
 					205000.0, 200000.0, 1.5));
