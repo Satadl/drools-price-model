@@ -1,0 +1,245 @@
+<decision-table52>
+  <tableName>premiumCalculation</tableName>
+  <rowNumberCol>
+    <hideColumn>false</hideColumn>
+    <width>-1</width>
+  </rowNumberCol>
+  <descriptionCol>
+    <hideColumn>false</hideColumn>
+    <width>-1</width>
+  </descriptionCol>
+  <ruleNameColumn>
+    <hideColumn>true</hideColumn>
+    <width>-1</width>
+  </ruleNameColumn>
+  <metadataCols/>
+  <attributeCols>
+    <attribute-column52>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <attribute>salience</attribute>
+      <reverseOrder>false</reverseOrder>
+      <useRowNumber>false</useRowNumber>
+    </attribute-column52>
+  </attributeCols>
+  <conditionPatterns>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>(undefined)</header>
+      <constraintValueType>1</constraintValueType>
+      <parameters/>
+      <definition class="singleton-list">
+        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
+          <text>$plan:Plan(getPreAuthorizationRequired().equals(&quot;@{param1}&quot;))
+</text>
+        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>(undefined)</header>
+          <constraintValueType>1</constraintValueType>
+          <fieldType>Boolean</fieldType>
+          <parameters/>
+          <varName></varName>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>(undefined)</header>
+      <constraintValueType>1</constraintValueType>
+      <parameters/>
+      <definition/>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>(undefined)</header>
+          <constraintValueType>1</constraintValueType>
+          <fieldType>Boolean</fieldType>
+          <parameters/>
+          <varName></varName>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>(undefined)</header>
+      <constraintValueType>1</constraintValueType>
+      <parameters/>
+      <definition/>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>(undefined)</header>
+          <constraintValueType>1</constraintValueType>
+          <fieldType>Boolean</fieldType>
+          <parameters/>
+          <varName></varName>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>(undefined)</header>
+      <constraintValueType>1</constraintValueType>
+      <parameters/>
+      <definition/>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>(undefined)</header>
+          <constraintValueType>1</constraintValueType>
+          <fieldType>Boolean</fieldType>
+          <parameters/>
+          <varName></varName>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+  </conditionPatterns>
+  <actionCols>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>Converted from [&apos;factor&apos;]</header>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
+          <text>$plan.setIndividualPremiumResult(@{param5});
+$plan.setIndividualPremiumResult($plan.getIndividualPremiumResult()*$sumFinalFactor);
+$plan.setIndividualPremiumResult(($plan.getIndividualPremiumResult()/$expense.getLossRatioTarget())*12);</text>
+        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>-1</width>
+          <header>factor</header>
+          <varName>param5</varName>
+          <fieldType>Object</fieldType>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+  </actionCols>
+  <imports>
+    <imports/>
+  </imports>
+  <packageName>com.wakandaspace.drools_price_model</packageName>
+  <version>739</version>
+  <tableFormat>EXTENDED_ENTRY</tableFormat>
+  <hitPolicy>NONE</hitPolicy>
+  <data>
+    <list>
+      <value>
+        <valueNumeric class="int">1</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Created from row 2</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">16</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>false</valueBoolean>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../value[5]"/>
+      <value reference="../value[5]"/>
+      <value reference="../value[5]"/>
+      <value>
+        <valueString>0.912</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">2</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Created from row 3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">16</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>false</valueBoolean>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../value[5]"/>
+      <value reference="../value[5]"/>
+      <value reference="../value[5]"/>
+      <value>
+        <valueString>1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+    <list>
+      <value>
+        <valueNumeric class="int">3</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Created from row 4</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueNumeric class="int">15</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueBoolean>true</valueBoolean>
+        <dataType>BOOLEAN</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value reference="../value[5]"/>
+      <value reference="../value[5]"/>
+      <value reference="../value[5]"/>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+    </list>
+  </data>
+</decision-table52>
